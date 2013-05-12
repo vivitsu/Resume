@@ -1,0 +1,92 @@
+% resume
+\documentclass[10pt]{article}
+
+\usepackage[top=0.3in, bottom=0.3in, left=0.3in, right=0.5in]{geometry}
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{p{0.14\textwidth}} % >{\raggedleft}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+{\Large \bf Vivitsu Maharaja}
+\date{}
+\thispagestyle{empty}
+\bigskip
+%\line(1,0){570}\\				 %Insert a line with direction (1,0)
+
+\begin{tabular}{L!{\VRule}R}
+% Contact Information
+\textsc{Contact}&3800 SW 34\textsuperscript{th} Street, Apartment AA263 \hfill mobile: (352) 278-5449\\
+\textsc{Information}&Gainesville, FL \hfill email: vmaharaja@ufl.edu\\
+\smallskip
+%Interests - Change company-wise
+%\textsc{Interests}&\smallskip Parallel \& Distributed Systems, Computer Architecture, Heterogenous Computing\\
+%\smallskip
+
+%Career Objective - Change company-wise
+\textsc{Career}&\smallskip To obtain an internship where I can leverage and enhance my skills \& experience while working on\\
+\textsc{Objective}&challenging problems in software development\\
+\smallskip
+
+%Education
+\textsc{Education}&\smallskip{\bf University of Florida}, Gainesville, Florida\\
+&\textit{Master of Science, Electrical \& Computer Engineering}\hfill {\bf May 2014}\\
+&Relevant Coursework: Computer Architecture, Computer Communications, Probability \& Random Processes.\\
+&In Progress: Parallel Computer Architecture, Distributed Computing, Cyber-Physical Systems.\\
+&GPA: 3.22/4.0\\
+&{\bf Dharmsinh Desai University}, Nadiad, India\\
+&\textit{Bachelor of Engineering, Electronics \& Communication}\hfill {\bf May 2011}\\
+&Selected Coursework: Embedded Systems, Data \& Computer Communication, Advanced Microprocessors, Probability \& Statistics, Communication Systems, C Programming, Digital Logic Design, Wireless Communications.\\
+&GPA: 62/100\\
+\smallskip
+%Skills
+\textsc{Skills}&\smallskip{\bf Programming Languages}: x86 Assembly, C, Basic knowledge of C++, Java, Go, MPI, OpenMP, UPC, CUDA, Redis \& \LaTeX\ \\
+%&{\bf Software}: MATLAB, \LaTeX\ (Basic), CUDA (Basic), Redis (Basic)\\
+&{\bf Operating Systems}: GNU/Linux, OS X, Windows\\
+\smallskip
+%Work Experience
+\textsc{Work}&\smallskip{\bf Volansys Technologies}, Ahmedabad, India\\
+\textsc{Experience}&\textit{Embedded Engineer}\hfill{\bf November 2011 - July 2012}\\
+&\smallskip Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller Driver in x86 assembly, to support PXE (Pre-boot eXecution Environment) booting of x86 based machines using an USB to Ethernet adapter.\\
+&\smallskip Worked with a team of 2 engineers to develop a software feature that would allow multiple broadcast domains in a  wireless router to form a VLAN (Virtual LAN). The wireless router was based on the MIPS \& VxWorks platforms.\\
+%&\smallskip{\bf Bharti Airtel}, Ahmedabad, India\\
+%&\textit{Project Trainee}\hfill{\bf December 2010 - April 2011}\\
+%&\smallskip Contributed to infrastructure testing for the Mobile Number Portability project, unveiled in India in January 2011.\\
+%&\smallskip Assisted the software support team in managing Bharti Airtel's Mobile Switching Center located in Ahmedabad, India.\\
+\smallskip
+%Projects
+\textsc{Projects}&\smallskip{\bf Web Service for Location Based Applications}\hfill{January 2013 - Present}\\
+&Working on the design \& implementation of a web server \& database backend that receives location data and pushes back relevant content based on the location to the application. The web server is implemented using the Go language and the database backend is the Redis NoSQL data store.\\
+% from a smartphone application - insert back in go project description later
+%\smallskip{\bf Face Recognition using Artificial Neural Networks}\hfill{January 2013 - Present}\\
+%&Working on the implementation of a face recognition system using a multi-layer artificial neural network that is executed on a CPU/GPU cluster using CUDA \& C++.\\
+&\smallskip{\bf Distributed Fault-Tolerant Stock Exchange System}\hfill{April 2013}\\
+& Implemented a fault-tolerant stock exchange system using reliable multicasting \& virtual synchrony that preserved client \& stock data across multiple nodes \& traded stocks based on 
+orders received from multiple clients connected to different nodes. Used the JGroups toolkit \& Java.\\
+%&\smallskip{\bf Web Service for Location Based Smartphone Applications}\hfill{January 2013 - Present}\\
+%&Working on the design \& implementation of a web server \& database backend that receives location data from a smartphone application and pushes back relevant content based on the location to the application. The web server is implemented using the Go language and the database backend is the Redis NoSQL data store.\\
+&\smallskip{\bf Distributed Control of Currency Exchange Value}\hfill{March 2013}\\
+& Implemented totally-ordered multicasting using Lamport’s logical clocks. The goal was to keep the replicas on the 3 machines, which shared a currency exchange value, consistent using active replication protocol. Used Java multi-threading and socket programming APIs.\\
+&\smallskip{\bf DNS Server using Java RMI}\hfill{February 2013}\\
+& Implemented a DNS server that supports recursive as well as iterative name resolution with support for server side caching using Java RMI.\\
+&\smallskip{\bf Distributed File System using Sun RPC}\hfill{February 2013}\\
+& Implemented a rudimentary distributed file system that supported read, write, find and list operations. The files were stored on a server and accessed by a client using RPC. Used the C language.\\ 
+&\smallskip{\bf Topology Management in Peer-to-Peer Systems}\hfill{January 2013}\\
+& Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks, which achieved various topologies for a cluster of nodes based on different criteria. Used C.\\
+%&\smallskip{\bf Simulation of Dijkstra's Algorithm}\hfill{July 2010 - November 2010}\\
+%&Developed a program in C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using Dijkstra's algorithm.\\
+%\smallskip
+%Presentations
+%\textsc{Presentations}&\smallskip{\bf Fundamentals of Switching \& Mobile Number Portability in a GSM network}\hfill{April 2011}\\
+%&Prepared and presented a report on the operation of a large scale GSM network, including switching principles and mobile number portability implementation.\\
+%\smallskip
+\end{tabular}
+
+%\section*{Education}
+%\begin{tabular}{L!{\VRule}R}
+%2005--2007&{\bf MSc in Computer Science, Great University, Country.}\\[5pt]
+%2001--2005&BSc in Life Science, Great University, Country.\\
+%\end{tabular}
+
+\end{document}
