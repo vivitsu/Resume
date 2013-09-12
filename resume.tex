@@ -1,15 +1,16 @@
 %---------------------------------------------
 %			RESUME
 %---------------------------------------------
-\documentclass[10pt]{article}
+\documentclass[10pt, a4paper]{article}
 
 %---------------------------------------------
 %	BASIC PACKAGE DECLARATIONS
 %---------------------------------------------
 \usepackage[top=0.3in, bottom=0.3in, left=0.3in, right=0.5in]{geometry}
-\usepackage{array, xcolor}
-\usepackage{mathpazo}
-\usepackage[parfill]{parskip} % Remove paragraph indentation
+%\usepackage{array, xcolor}
+%\usepackage{mathpazo}
+%\usepackage[parfill]{parskip} % Remove paragraph indentation
+\usepackage{parskip}
 
 \begin{document}
 %---------------------------------------------
@@ -23,79 +24,74 @@
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-{\small 3800 SW 34\textsuperscript{th} Street, Apartment Z251, Gainesville, FL $\diamond$ (352) 278-5449 $\diamond$ vmaharaja@ufl.edu}
+3800 SW 34\textsuperscript{th} Street, Apartment Z251, Gainesville, FL $\diamond$ (352) 278-5449 $\diamond$ vmaharaja@ufl.edu
 \end{center}
 
 %---------------------------------------------
 %	           OBJECTIVE
 %---------------------------------------------
-\MakeUppercase{\bf Objective}
+%\MakeUppercase{\bf Objective}
 %\medskip \\
 %\hrule
 
-To obtain a position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering \& software development.
+%To obtain a position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering \& %software development.
 
 %---------------------------------------------
 %	           EDUCATION
 %---------------------------------------------
 \MakeUppercase{\bf Education}
-%\medskip \\
-%\hrule
+\smallskip
+\hrule
+{\bf Master of Science}, Electrical \& Computer Engineering \hfill May 2014\\
+University of Florida, Gainesville, FL. {\bf GPA:} 3.16/4.0 \\
+{\bf Bachelor of Engineering}, Electronics \& Communication \hfill May 2011\\
+Dharmsinh Desai University, Nadiad, India. {\bf GPA:} 62/100
 
-{\bf University of Florida}, Gainesville, Florida\\
-\textit{Master of Science, Electrical \& Computer Engineering}\hfill{\bf May 2014}\\
-Relevant Coursework: Computer Architecture, Parallel Computer Architecture, Distributed Computing, Cloud Computing, Computer Communications, Probability \& Random Processes.\\
-GPA: 3.16/4.0 %\medskip \\
-
-{\bf Dharmsinh Desai University}, Nadiad, India\\
-\textit{Bachelor of Engineering, Electronics \& Communication}\hfill{\bf May 2011}\\
-Selected Coursework: Embedded Systems, Data \& Computer Communication, Advanced Microprocessors, Probability \& Statistics, Communication Systems, C Programming.\\
-GPA: 62/100
+Coursework: Computer Architecture, Parallel Computer Architecture, Distributed Computing, Cloud Computing, Computer Networks, Communication Systems, Probability \& Random Processes.
 
 %---------------------------------------------
 %		WORK EXPERIENCE
 %---------------------------------------------
-\MakeUppercase{\bf Work Experience}
-%\medskip \\
-%\hrule
-
-{\bf Advanced Computing \& Information Systems Lab}, University of Florida\\
-\textit{Research Volunteer}, iDigBio Project\hfill{\bf May 2013 - Present} \smallskip \\
+\MakeUppercase{\bf Experience}
+\smallskip
+\hrule
+{\bf Advanced Computing \& Information Systems Lab}, University of Florida \hfill May 2013 - Present\\
+\textit{Research Volunteer}
+\begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-Working on the implementation, evaluation \& tuning of text-based information retrieval systems using NoSQL datastores. \smallskip \\
-Developed a Java application that fetches JSON objects from a URL and adds them to Riak. Bucket creation, key management \& interfacing with Riak are all managed automatically by the application. \smallskip \\
-Responsible for the setup and management of Hadoop \& Riak clusters. %\medskip
-
-{\bf Volansys Technologies}, Ahmedabad, India\\
-\textit{Embedded Engineer}\hfill{\bf November 2011 - July 2012} \smallskip \\
+    \item Developed a Java application that fetches JSON objects from a URL and adds them to Riak. Bucket creation, key management \& interfacing with Riak are all managed by the application. %\smallskip \\
+    \item Working on the implementation, evaluation \& tuning of text-based information retrieval systems using Hadoop \& Riak.% \smallskip \\
+\end{itemize}
+{\bf Volansys Technologies}, Ahmedabad, India\hfill November 2011 - July 2012\\
+\textit{Embedded Engineer}
+\begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller driver in x86 assembly, which allowed desktops/tablets with Intel x86 processors to PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter. The driver was part of an application which ran in real-mode, without any OS involvement \& under significant memory \& run-time constraints. \smallskip \\
-Developed software components to manage the PCI bus, negotiate ownership with the BIOS subsystem and added support for multiple vendor adapters, as part of the overall PXE application. \smallskip \\
+    \item Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller driver in x86 assembly, as part of an application which allowed clients to PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter. %\smallskip \\
+    \item Developed software components to manage the PCI bus, negotiate ownership with the BIOS subsystem and added support for multiple vendor adapters, as part of the overall PXE application. %\smallskip \\
 %Handled responsibility for all aspects of the project, including development, maintenance, documentation \& client interaction.\smallskip \\
 %---------------------
 %	PROJECT - 2
 %---------------------
-Worked with a team of 2 engineers to develop a software feature that would allow multiple broadcast domains in a wireless router to form a VLAN (Virtual LAN). The wireless router was based on the MIPS \& VxWorks platforms.
-
+    \item Worked with a team of 2 engineers to develop a software feature that would allow multiple broadcast domains in a wireless router to form a VLAN (Virtual LAN). The wireless router was based on the MIPS \& VxWorks platforms.
+\end{itemize}
 %---------------------------------------------
 %	          PROJECTS
 %---------------------------------------------
 \MakeUppercase{\bf Projects}
-%\medskip \\
-%\hrule
-
+\smallskip
+\hrule
 %---------------------
 %	PROJECT - 1
 %---------------------
-{\bf Web Server for Location Based Applications} \textit{using Go \& Redis}\hfill{\bf February 2013 - April 2013} \smallskip \\
-Designed and implemented a highly concurrent web server that accepts a client's location and presents choices to view different resources based on the entered location. \smallskip \\
-Used TLS encryption to secure client connections with the server. \smallskip \\
-Added support for user account creation \& user's location history. %\medskip
-
+{\bf Web Service for Location Based Applications} \hfill February 2013 - April 2013
+\begin{itemize}
+    \item Designed and implemented a secure web application in Go that allows a user to view different resources on the web about his location, including Wikipedia links if the user is at a well-known point of interest.
+    \item Created a custom Redis datastore that stored a user's account details, his location history \& a POI database.
+\end{itemize}
 %---------------------
 %	PROJECT - 2
 %---------------------
@@ -106,17 +102,20 @@ Added support for user account creation \& user's location history. %\medskip
 %---------------------
 %	PROJECT - 3
 %---------------------
-{\bf Distributed Fault-Tolerant Stock Exchange System} \textit{using Java \& JGroups}\hfill{\bf April 2013} \smallskip \\
-Implemented a stock exchange system that used fault-tolerant, virtually synchronous replicas to perform stock trades. \smallskip \\
-The system was designed to handle large number of client connections \& trade requests to different nodes in the system. \smallskip \\
-Client information, trade requests \& stock data are preserved by the system. %\medskip
-
+{\bf Distributed Fault-Tolerant Stock Exchange System} \hfill April 2013
+\begin{itemize}
+    \item Implemented a stock exchange system using Java \& JGroups that used fault-tolerant, virtually synchronous replicas to perform stock trades.
+    \item The system was designed to handle large number of client connections \& trade requests to different nodes in the system.
+    \item Client information, trade requests \& stock data are preserved by the system. %\medskip
+\end{itemize}
 %---------------------
 %	PROJECT - 4
 %---------------------
-%{\bf Distributed Control of Currency Exchange Value} \textit{using Java}\hfill{\bf March 2013} \smallskip \\
-%Implemented totally-ordered multicasting using Lamport's logical clocks. The goal was to keep the replicas on the 3 machines, which shared a currency %exchange value, consistent using active replication protocol. %\medskip
-
+{\bf Gossip based Topology Management in Peer-to-Peer Systems} \hfill January 2013, August 2013
+\begin{itemize}
+    \item Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks using C, which achieved various topologies for a cluster of nodes based on different distance functions.
+    \item Modified the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. This implementation was done in Java. %\medskip
+\end{itemize}
 %---------------------
 %	PROJECT - 5
 %---------------------
@@ -126,16 +125,17 @@ Client information, trade requests \& stock data are preserved by the system. %\
 %---------------------
 %	PROJECT - 6
 %---------------------
-{\bf Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C, Java}\hfill{\bf January 2013} \smallskip \\
-Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks, which achieved various topologies for a cluster of nodes based on different distance functions. This implementation was done in C. \smallskip \\
-Modified the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. This implementation was done in Java. %\medskip
-
+{\bf Distributed Control of Currency Exchange Value} \hfill March 2013
+\begin{itemize}
+    \item Implemented totally-ordered multicasting in Java using Lamport's logical clocks. The goal was to keep the replicas on the 3 machines, which shared a currency exchange value, consistent using active replication protocol. %\medskip
+\end{itemize}
 %---------------------
 %	PROJECT - 7
 %---------------------
-%{\bf Simulation of Dijkstra's Algorithm} \textit{using C}\hfill{\bf July 2010 - November 2010} \smallskip \\
-%Developed a program that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
-
+{\bf Simulation of Dijkstra's Algorithm} \hfill July 2010 - November 2010
+\begin{itemize}
+    \item Developed a program using C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
+\end{itemize}
 %-----------------------------
 %	PRESENTATION - 1
 %-----------------------------
@@ -146,9 +146,8 @@ Modified the T-Man implementation so that it would adapt it's topology at runtim
 %	           SKILLS
 %---------------------------------------------
 \MakeUppercase{\bf Skills}
-%\medskip \\
-%\hrule
-
+\smallskip
+\hrule
 {\bf Programming Languages:} x86 Assembly, C, Java, Go, MPI, CUDA \& \LaTeX\ \\
 {\bf Technologies:} Hadoop, Riak, Redis, Git, Subversion\\
 {\bf Operating Systems}: GNU/Linux, OS X, Windows\\
