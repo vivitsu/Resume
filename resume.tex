@@ -17,7 +17,7 @@
 %		     TITLE
 %---------------------------------------------
 \begin{center}
-{\Large \bf Vivitsu Maharaja}
+\textbf{\Large Vivitsu Maharaja}
 \date{}
 \thispagestyle{empty}
 \smallskip \\
@@ -30,16 +30,15 @@
 %---------------------------------------------
 %	           OBJECTIVE
 %---------------------------------------------
-%\MakeUppercase{\bf Objective}
-%\medskip \\
-%\hrule
-
-%To obtain a position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering \& %software development.
+\textbf{Objective}
+\smallskip
+\hrule
+To obtain a position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering \& software development.
 
 %---------------------------------------------
 %	           EDUCATION
 %---------------------------------------------
-\MakeUppercase{\bf Education}
+\textbf{Education}
 \smallskip
 \hrule
 {\bf Master of Science}, Electrical \& Computer Engineering \hfill May 2014\\
@@ -50,9 +49,19 @@ Dharmsinh Desai University, Nadiad, India. {\bf GPA:} 62/100
 Coursework: Computer Architecture, Parallel Computer Architecture, Distributed Computing, Cloud Computing, Computer Networks, Communication Systems, Probability \& Random Processes.
 
 %---------------------------------------------
+%	           SKILLS
+%---------------------------------------------
+\textbf{Skills}
+\smallskip
+\hrule
+Programming Languages: x86 Assembly, C, Java, Go, MPI, CUDA \& \LaTeX\ \\
+Technologies: Hadoop, Riak, Redis, Git, Subversion
+%Operating Systems: GNU/Linux, OS X, Windows
+
+%---------------------------------------------
 %		WORK EXPERIENCE
 %---------------------------------------------
-\MakeUppercase{\bf Experience}
+\textbf{Experience}
 \smallskip
 \hrule
 {\bf Advanced Computing \& Information Systems Lab}, University of Florida \hfill May 2013 - Present\\
@@ -70,7 +79,8 @@ Coursework: Computer Architecture, Parallel Computer Architecture, Distributed C
 %---------------------
 %	PROJECT - 1
 %---------------------
-    \item Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller driver in x86 assembly, as part of an application which allowed clients to PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter. %\smallskip \\
+    \item Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller driver in x86 assembly, as part of an application which allowed clients to PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter. 
+    \item Enhanced the driver to manage the complete state machine of the controller including device detection, power management and data transfer. %\smallskip \\
     \item Developed software components to manage the PCI bus, negotiate ownership with the BIOS subsystem and added support for multiple vendor adapters, as part of the overall PXE application. %\smallskip \\
 %Handled responsibility for all aspects of the project, including development, maintenance, documentation \& client interaction.\smallskip \\
 %---------------------
@@ -81,16 +91,16 @@ Coursework: Computer Architecture, Parallel Computer Architecture, Distributed C
 %---------------------------------------------
 %	          PROJECTS
 %---------------------------------------------
-\MakeUppercase{\bf Projects}
+\textbf{Projects}
 \smallskip
 \hrule
 %---------------------
 %	PROJECT - 1
 %---------------------
-{\bf Web Service for Location Based Applications} \hfill February 2013 - April 2013
+\textbf{Web Service for Location Based Applications} \textit{using Go \& Redis} \hfill April 2013
 \begin{itemize}
-    \item Designed and implemented a secure web application in Go that allows a user to view different resources on the web about his location, including Wikipedia links if the user is at a well-known point of interest.
-    \item Created a custom Redis datastore that stored a user's account details, his location history \& a POI database.
+    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location, including Wikipedia links if the user is at a well-known point of interest.
+    \item Created and managed a datastore that stored a user's account details, his location history \& a POI database.
     \item Project source code can be found at https://bitbucket.org/vivitsu/goserve.
 \end{itemize}
 %---------------------
@@ -103,19 +113,19 @@ Coursework: Computer Architecture, Parallel Computer Architecture, Distributed C
 %---------------------
 %	PROJECT - 3
 %---------------------
-{\bf Distributed Fault-Tolerant Stock Exchange System} \hfill April 2013
+\textbf{Distributed Fault-Tolerant Stock Exchange System} \textit{using Java \& JGroups} \hfill April 2013
 \begin{itemize}
-    \item Implemented a stock exchange system using Java \& JGroups that used fault-tolerant, virtually synchronous replicas to perform stock trades.
-    \item The system was designed to handle large number of client connections \& trade requests to different nodes in the system.
-    \item Client information, trade requests \& stock data are preserved by the system. %\medskip
+    \item Implemented a stock exchange system that used fault-tolerant, virtually synchronous replicas to perform stock trades.
+    \item Designed the system to handle large number of client connections \& trade requests to different nodes in the system.
+    \item Enhanced the system so that client information, trade requests \& stock data are preserved across node failures. %\medskip
 \end{itemize}
 %---------------------
 %	PROJECT - 4
 %---------------------
-{\bf Gossip based Topology Management in Peer-to-Peer Systems} \hfill January 2013, August 2013
+\textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C \& Java} \hfill August 2013
 \begin{itemize}
-    \item Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks using C, which achieved various topologies for a cluster of nodes based on different distance functions.
-    \item Modified the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. This implementation was done in Java. %\medskip
+    \item Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks, which achieved various topologies for a cluster of nodes based on different distance functions.
+    \item Enhanced the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. %\medskip
 \end{itemize}
 %---------------------
 %	PROJECT - 5
@@ -126,31 +136,22 @@ Coursework: Computer Architecture, Parallel Computer Architecture, Distributed C
 %---------------------
 %	PROJECT - 6
 %---------------------
-{\bf Distributed Control of Currency Exchange Value} \hfill March 2013
+\textbf{Distributed Control of Currency Exchange Value} \textit{using Java} \hfill March 2013
 \begin{itemize}
-    \item Implemented totally-ordered multicasting in Java using Lamport's logical clocks. The goal was to keep the replicas on the 3 machines, which shared a currency exchange value, consistent using active replication protocol. %\medskip
+    \item Implemented totally-ordered multicasting using Lamport's logical clocks. 
+    \item Achieved consistent replicas across 3 machines, which shared a currency exchange value, using active replication protocol. %\medskip
 \end{itemize}
 %---------------------
 %	PROJECT - 7
 %---------------------
-{\bf Simulation of Dijkstra's Algorithm} \hfill July 2010 - November 2010
-\begin{itemize}
-    \item Developed a program using C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
-\end{itemize}
+%{\bf Simulation of Dijkstra's Algorithm} \hfill November 2010
+%\begin{itemize}
+%    \item Developed a program using C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
+%\end{itemize}
 %-----------------------------
 %	PRESENTATION - 1
 %-----------------------------
 %{\bf ``Fundamentals of Switching \& Mobile Number Portability in a GSM network''}\hfill{\bf April 2011} \smallskip \\
 %Prepared and presented a report on the operation of a large scale GSM network, including switching principles and mobile number portability %implementation. %\medskip
-
-%---------------------------------------------
-%	           SKILLS
-%---------------------------------------------
-\MakeUppercase{\bf Skills}
-\smallskip
-\hrule
-{\bf Programming Languages:} x86 Assembly, C, Java, Go, MPI, CUDA \& \LaTeX\ \\
-{\bf Technologies:} Hadoop, Riak, Redis, Git, Subversion\\
-{\bf Operating Systems}: GNU/Linux, OS X, Windows\\
 
 \end{document}
