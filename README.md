@@ -27,7 +27,7 @@ I decided to put the source file in version control so that I can track the chan
 [This](http://www.toofishes.net/blog/why-i-do-my-resume-latex/) article explains in a very good way why I decided
 to put my resume in version control, and why I decided to do it in LaTeX.
 
-LICENSE
+License
 =======
 
 The non-LaTeX contents of the source file `resume.tex` and the entire content of the pdf `resume.pdf` are copyright (c) Vivitsu Maharaja.

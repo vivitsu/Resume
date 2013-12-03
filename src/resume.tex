@@ -6,12 +6,21 @@
 %---------------------------------------------
 %	BASIC PACKAGE DECLARATIONS
 %---------------------------------------------
-\usepackage[top=0.3in, bottom=0.3in, left=0.3in, right=0.5in]{geometry}
+\usepackage[top=0.2in, bottom=0.6in, left=0.3in, right=0.5in]{geometry}
 %\usepackage{array, xcolor}
 %\usepackage{mathpazo}
 %\usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{parskip}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\pagenumbering{gobble} % Adding this to suppress page numbering while keeping footer
+
+\lfoot{All source code, including the \LaTeX\ source for this document can be found at \url{https://github.com/vivitsu/}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
 %---------------------------------------------
@@ -20,7 +29,7 @@
 \begin{center}
 \textbf{\Large Vivitsu Maharaja}
 \date{}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \smallskip \\
 %---------------------------------------------
 %	     CONTACT INFORMATION
@@ -105,14 +114,14 @@ Technologies: Hadoop, Riak, Redis, Git, Subversion
     \item Designed and implemented a distributed, decentralized file system based on a peer-to-peer architecture
     \item Implemented consistency and fault-tolerance models to ensure high availability
     \item Designed and implemented a client module and an application that uses the file system to store data on a cluster
-    \item Source code can be found at \url{https://github.com/vivitsu/Aether}
+%    \item Source code can be found at \url{https://github.com/vivitsu/Aether}
 \end{itemize}
 %---------------------
 %	PROJECT - 2
 %---------------------
 \textbf{Web Service for Location Based Applications} \textit{using Go \& Redis} \hfill April 2013
 \begin{itemize}
-    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location, including Wikipedia links if the user is at a well-known point of interest.
+    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location.
     \item Created and managed a datastore that stored a user's account details, his location history \& a POI database.
     \item Project source code can be found at \url{https://bitbucket.org/vivitsu/goserve}.
 \end{itemize}
