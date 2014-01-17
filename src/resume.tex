@@ -6,21 +6,21 @@
 %---------------------------------------------
 %	BASIC PACKAGE DECLARATIONS
 %---------------------------------------------
-\usepackage[top=0.2in, bottom=0.6in, left=0.3in, right=0.5in]{geometry}
+\usepackage[top=0.5in, bottom=0.5in, left=0.3in, right=0.5in]{geometry}
 %\usepackage{array, xcolor}
 %\usepackage{mathpazo}
 %\usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{parskip}
 %\usepackage{hyperref}
-\usepackage{fancyhdr}
+%\usepackage{fancyhdr}
 
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
-\pagenumbering{gobble} % Adding this to suppress page numbering while keeping footer
+%\pagenumbering{gobble} % Adding this to suppress page numbering while keeping footer
 
-\lfoot{All source code, including the \LaTeX\ source for this document can be found at \texttt{https://github.com/vivitsu}}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+%\lfoot{All source code, including the \LaTeX\ source for this document can be found at \texttt{https://github.com/vivitsu}}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
 %---------------------------------------------
@@ -29,12 +29,12 @@
 \begin{center}
 \textbf{\Large Vivitsu Maharaja}
 \date{}
-%\thispagestyle{empty}
+\thispagestyle{empty}
 \smallskip \\
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-3800 SW 34\textsuperscript{th} Street, Apartment Z251, Gainesville, FL $\diamond$ (352) 278-5449 $\diamond$ vmaharaja@ufl.edu
+3800 SW 34\textsuperscript{th} Street, Apartment Z251, Gainesville, FL $\diamond$ (352) 278-5449 $\diamond$ vmaharaja@ufl.edu $\diamond$ \texttt{https://github.com/vivitsu}
 \end{center}
 
 %---------------------------------------------
@@ -56,7 +56,7 @@ University of Florida, Gainesville, FL. {\bf GPA:} 3.37/4.0 \\
 {\bf Bachelor of Engineering}, Electronics \& Communication \hfill May 2011\\
 Dharmsinh Desai University, Nadiad, India. {\bf GPA:} 62/100
 
-Coursework: Computer Architecture, Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers.
+Coursework: Computer Architecture, Parallel Computer Architecture, Computer Networks, Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers.
 
 %---------------------------------------------
 %	           SKILLS
@@ -75,8 +75,7 @@ Technologies: Hadoop, Riak, Redis, Solr
 \textbf{Experience}
 \smallskip
 \hrule
-{\bf Advanced Computing \& Information Systems Lab}, University of Florida \hfill May 2013 - Present\\
-\textit{Research Volunteer}
+\textit{Research Volunteer}, {\bf Advanced Computing \& Information Systems Lab}, University of Florida \hfill May 2013 - Present
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
@@ -85,8 +84,7 @@ Technologies: Hadoop, Riak, Redis, Solr
     \item Evaluated an Apache Solr system by benchmarking various parameters like indexing time, compression ratio, recall and the performance of the indexing algorithm.
 %    \item Developing \& evaluating text-based information retrieval systems using frameworks like Hadoop, Riak \& Apache Solr.% \smallskip \\
 \end{itemize}
-{\bf Volansys Technologies}, Ahmedabad, India\hfill November 2011 - July 2012\\
-\textit{Embedded Engineer}
+\textit{Embedded Engineer}, {\bf Volansys Technologies}, Ahmedabad, India\hfill November 2011 - July 2012
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
@@ -111,18 +109,17 @@ Technologies: Hadoop, Riak, Redis, Solr
 %---------------------
 \textbf{Distributed File System} \textit{using Java} \hfill August 2013 - December 2013
 \begin{itemize}
-    \item Designed and implemented a distributed, decentralized file system based on a peer-to-peer architecture
-    \item Implemented modular network management, file management and cluster management daemons to ensure consistency and fault-tolerance
-    \item Designed and implemented a multi-threaded client module and application that communicates with the file system and stores data on the cluster
-%    \item Source code can be found at \url{https://github.com/vivitsu/Aether}
+    \item Designed and implemented a distributed, decentralized file system based on a peer-to-peer architecture.
+    \item Implemented modular network management, file management and cluster management daemons to ensure consistency and fault-tolerance.
+    \item Designed and implemented a multi-threaded client module and application that communicates with the file system and stores data on the cluster.
+    \item Source code can be found at \texttt{https://github.com/vivitsu/Aether}.
 \end{itemize}
 %---------------------
 %	PROJECT - 2
 %---------------------
 \textbf{Web Service for Location Based Applications} \textit{using Go \& Redis} \hfill April 2013
 \begin{itemize}
-    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location.
-    \item Created and managed a datastore that stored a user's account details, his location history \& a POI database.
+    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location. User account details, location history \& a POI database were managed in Redis.
     \item Project source code can be found at \texttt{https://bitbucket.org/vivitsu/goserve}.
 \end{itemize}
 %---------------------
