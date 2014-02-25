@@ -9,10 +9,18 @@
 \usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
 %\usepackage{array, xcolor}
 %\usepackage{mathpazo}
-%\usepackage[parfill]{parskip} % Remove paragraph indentation
+%\usepackage[parfill]{parskip} % Removes paragraph indentation, but screws up the alignment of hfill. Use the next line
 \usepackage{parskip}
 %\usepackage{hyperref}
 %\usepackage{fancyhdr}
+\usepackage{enumitem}
+\setlist{nolistsep} % No space between list items
+
+%\addtolength{\oddsidemargin}{-.975in}
+%\addtolength{\evensidemargin}{-.975in}
+%\addtolength{\textwidth}{1.95in}
+%\addtolength{\topmargin}{-1.1in}
+%\addtolength{\textheight}{2.75in}
 
 %\pagestyle{fancy}
 
@@ -67,9 +75,10 @@ Coursework: Computer Architecture, Parallel Computer Architecture, Computer Netw
 \textbf{Skills}
 \smallskip
 \hrule
-Programming Languages: C, Java, Go\\
-Technologies: Hadoop, Riak, Redis, Solr\\
-Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VLANs) 
+\begin{itemize}
+    \item C, Java, Go, MPI, CUDA, Hadoop, Riak, Redis, Solr.
+    \item Knowledge of Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VLANs).
+\end{itemize} 
 %Operating Systems: GNU/Linux, OS X, Windows
 
 %---------------------------------------------
@@ -78,31 +87,35 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
 \textbf{Experience}
 \smallskip
 \hrule
-{\bf Advanced Computing \& Information Systems (ACIS) Lab}, University of Florida
-\textit{Research Volunteer} \hfill May 2013 - Present
+\textit{Research Volunteer}, {\bf ACIS Lab}, University of Florida \hfill May 2013 - Present
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-    \item Developed a Java application that fetches JSON objects from a URL and adds them to Solr. Solr document creation \& interfacing with Solr are all managed by the application. %\smallskip \\
-    \item Evaluated an Apache Solr system by benchmarking various parameters like indexing time, compression ratio, recall and the performance of the indexing algorithm.
+    \item Set up and administered a \textbf{Solr}, \textbf{Hadoop} and \textbf{Riak} 
+clusters as part of a project to benchmark information retrieval systems. As part of the Solr setup, created a schema to specify biological specimen records.
+    \item Developed a Java application to store the specimen records in Solr and Riak, using the \texttt{\bf solrj} and \texttt{\bf riak-java-client} client libraries.
+    \item Designed the application to fetch and parse \textbf{JSON} specimen records from a web service, convert the JSON to POJO/SolrDocument, upload it to the Riak/Solr
+setup and benchmark each step of the process.
+    \item Evaluated the Solr setup by benchmarking various parameters like indexing time, compression ratio, recall and the performance of the indexing algorithm.
 %    \item Developing \& evaluating text-based information retrieval systems using frameworks like Hadoop, Riak \& Apache Solr.% \smallskip \\
 \end{itemize}
-{\bf Volansys Technologies}, Ahmedabad, India
-\textit{Embedded Engineer} \hfill November 2011 - July 2012
+
+\textit{Embedded Engineer}, {\bf Volansys Technologies}, Ahmedabad, India \hfill Nov. 2011 - July 2012
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-    \item Developed a USB 2.0 (Enhanced Host Controller Interface) Host Controller driver in x86 assembly, as part of an application which allowed clients to PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter. 
-    \item Enhanced the driver to manage the complete state machine of the controller including device detection, power management and data transfer. %\smallskip \\
+    \item Developed a \textbf{USB 2.0 (Enhanced Host Controller Interface)} Host Controller driver in \textbf{x86 assembly}, as part of an application which allowed clients to \textbf{PXE (Pre-boot eXecution Environment)} boot via a network using an USB to Ethenet adapter. 
+    \item Enhanced the driver to manage the complete \textbf{state machine} of the controller including device detection, power management and data transfer. %\smallskip \\
 %    \item Developed software components to manage the PCI bus, negotiate ownership with the BIOS subsystem and added support for multiple vendor adapters, as part of the overall PXE application. %\smallskip \\
 %Handled responsibility for all aspects of the project, including development, maintenance, documentation \& client interaction.\smallskip \\
 %---------------------
 %	PROJECT - 2
 %---------------------
-    \item Developed a software feature for that would allow multiple broadcast domains in a wireless router to form a VLAN (Virtual LAN).
+    \item Developed a software feature for that would allow multiple broadcast domains in a wireless router to form a \textbf{VLAN (Virtual LAN)}.
 \end{itemize}
+
 %---------------------------------------------
 %	          PROJECTS
 %---------------------------------------------
@@ -119,6 +132,7 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
     \item Designed and implemented a multi-threaded client module and application that communicates with the file system and stores data on the cluster.
     \item Source code can be found at \texttt{https://github.com/vivitsu/Aether}.
 \end{itemize}
+
 %---------------------
 %	PROJECT - 2
 %---------------------
@@ -127,6 +141,7 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
     \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location. User account details, location history \& a POI database were managed in Redis.
     \item Project source code can be found at \texttt{https://bitbucket.org/vivitsu/goserve}.
 \end{itemize}
+
 %---------------------
 %	PROJECT - 3
 %---------------------
@@ -142,6 +157,7 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
     \item Implemented a stock exchange system that used fault-tolerant, virtually synchronous replicas to perform stock trades.
     \item Enhanced the system so that client information, trade requests \& stock data are preserved across node failures. %\medskip
 \end{itemize}
+
 %---------------------
 %	PROJECT - 5
 %---------------------
@@ -150,6 +166,7 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
 %    \item Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks, which achieved various topologies for a cluster of nodes based on different distance functions.
 %    \item Enhanced the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. %\medskip
 %\end{itemize}
+
 %---------------------
 %	PROJECT - 6
 %---------------------
@@ -164,6 +181,7 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
 %    \item Implemented totally-ordered multicasting using Lamport's logical clocks. 
 %    \item Achieved consistent replicas across 3 machines, which shared a currency exchange value, using active replication protocol. %\medskip
 %\end{itemize}
+
 %---------------------
 %	PROJECT - 8
 %---------------------
@@ -171,12 +189,14 @@ Knowledge: Data Structures \& Algorithms, Embedded Systems, Virtual Networks (VL
 %\begin{itemize}
 %    \item Developed a program using C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
 %\end{itemize}
+
 %-----------------------------
 %	PRESENTATION - 1
 %-----------------------------
 %{\bf ``Fundamentals of Switching \& Mobile Number Portability in a GSM network''}\hfill{\bf April 2011} \smallskip \\
 %Prepared and presented a report on the operation of a large scale GSM network, including switching principles and mobile number portability %implementation. %\medskip
 
-Other projects include \textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C}, \textbf{DNS Server} \textit{using Java RMI} \& \textbf{Totally-ordered Multicasting using Lamport logical clocks} \textit{using Java}. 
+Other projects include \textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C}, \textbf{Face Recognition using Artificial Neural Networks} \textit{using C \& CUDA}, 
+\textbf{DNS Server} \textit{using Java RMI} \& \textbf{Totally-ordered Multicasting using Lamport logical clocks} \textit{using Java}. 
 
 \end{document}
