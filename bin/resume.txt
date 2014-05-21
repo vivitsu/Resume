@@ -1,0 +1,127 @@
+Vivitsu Maharaja
+================
+
+Contact Information
+-------------------
+
+* 3800 SW 34th Street, Apt. Z251, Gainesville, FL 32608
+* (352) 278-5449
+* vmaharaja@ufl.edu
+* http://vivitsu.co
+
+Education
+---------
+
+* University of Florida, Gainesville, FL
+  Master of Science, Electrical & Computer Engineering, May 2014
+  GPA: 3.33/4.00
+  
+* Dharmsinh Desai University, Nadiad, India
+  Bachelor of Engineering, Electronics & Communication, May 2011
+  GPA: 62/100
+  
+  Coursework: Computer Architecture, Computer Communications, Parallel Computer Architecture, 
+              Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers.
+
+Skills
+------
+
+* C, Java, Go, MPI, CUDA, Hadoop, Riak, Redis, Solr, HTML, CSS.
+* Knowledge of Data Structures & Algorithms, Embedded Systems, Virtual Networks.
+
+Work Experience
+---------------
+
+* Advanced Computing & Information Systems Lab, University of Florida
+  Research Volunteer, May 2013 - Present
+  
+  - Set up and administered Solr, Hadoop and Riak clusters as part of a project 
+    to benchmark information retrieval systems. As part of the Solr setup, created 
+    a Solr schema to specify biological specimen records.
+
+  - Developed a Java application to store the specimen records in Solr and Riak, 
+    using the solrj and riak-java-client client libraries.
+
+  - Designed the application to fetch and parse JSON specimen records from a web service, 
+    convert the JSON to POJO/SolrDocument, upload it to the Riak/Solr setup and benchmark 
+    each step of the process.
+
+  - Evaluated an Apache Solr system by benchmarking various parameters like indexing time, 
+    compression ratio, recall and the performance of the indexing algorithm.
+
+* Volansys Technologies, Ahmedabad, India
+  Embedded Engineer, Nov 2011 - July 2012
+  
+  - Developed, tested, documented and maintained a USB 2.0 (Enhanced Host Controller Interface) 
+    Host Controller driver, as part of an application which allowed clients to 
+    PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter.
+ 
+  - Enhanced the driver to manage the complete state machine of the controller 
+    including device detection, power management and data transfer.
+
+  - Developed a software feature in C that would allow multiple broadcast domains in a wireless 
+    router to form a VLAN (Virtual LAN). Assessed, developed and delivered new feature requests 
+    from the client for the router operating system.
+ 
+  - Designed and executed test cases for topology setup, DHCP communication and VLAN tag 
+    management in the router's operating system.
+
+Projects
+--------
+
+* Performance Evaluation of Open vSwitch & Linux Bridge, April 2014
+  
+  - Performed a comprehensive evaluation of Linux Bridge & Open vSwitch software bridges
+    in multiple configurations.
+  
+  - Designed tests to measure throughput, latency and packet loss between networks of
+    virtual machines.
+
+* Distributed File System using Java, August 2013 - December 2013
+
+  - Designed and implemented a distributed, decentralized file system based on a 
+    peer-to-peer architecture
+
+  - Implemented modular network management, file management and cluster management 
+    daemons to ensure consistency and fault-tolerance
+
+  - Designed and implemented a multi-threaded client module and application that 
+    communicates with the file system and stores data on the cluster
+
+* Web Server for Location Based Applications, February 2013 - April 2013
+  
+  - Designed and implemented a secure web application that allows a user to view 
+    different resources on the web about his location. User account details, 
+    location history & a POI database were managed in Redis.
+
+  - Project source code can be found at https://bitbucket.org/vivitsu/goserve.
+
+* Distributed Fault-Tolerant Stock Exchange System, April 2013
+
+  - Implemented a stock exchange system using Java & JGroups that used fault-tolerant, 
+    virtually synchronous replicas to perform stock trades.
+
+  - The system was designed to handle large number of client connections & trade 
+    requests to different nodes in the system.
+
+  - Client information, trade requests & stock data are preserved by the system.
+
+* Distributed Control of Currency Exchange Value, March 2013
+
+  - Implemented totally-ordered multicasting using Lamports logical clocks. The 
+    goal was to keep the replicas on the 3 machines, which shared a currency exchange value, 
+    consistent using active replication protocol. Used Java multi-threading and socket programming APIs.
+
+* DNS Server using Java RMI, February 2013
+
+  - Implemented a DNS server that supports recursive as well as iterative name 
+    resolution with support for server side caching using Java RMI.
+
+* Topology Management in Peer-to-Peer Systems, January 2013
+
+  - Implemented the T-Man gossip based topology management protocol for peer to 
+    peer overlay networks using C, which achieved various topologies for a cluster 
+    of nodes based on different distance functions.
+
+  - Modified the T-Man implementation so that it would adapt it's topology at runtime
+    to changes in the radius of the network. This implementation was done in Java.
