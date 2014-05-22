@@ -88,15 +88,15 @@ Projects
   - Designed and implemented a multi-threaded client module and application that 
     communicates with the file system and stores data on the cluster
 
-* Web Server for Location Based Applications, February 2013 - April 2013
+* Web Server for Location Based Applications using Go & Redis, February 2013 - April 2013
   
-  - Designed and implemented a secure web application that allows a user to view 
+  - Designed and implemented a web application that allows a user to view 
     different resources on the web about his location. User account details, 
     location history & a POI database were managed in Redis.
 
   - Project source code can be found at https://bitbucket.org/vivitsu/goserve.
 
-* Distributed Fault-Tolerant Stock Exchange System, April 2013
+* Distributed Fault-Tolerant Stock Exchange System using Java & JGroups, April 2013
 
   - Implemented a stock exchange system using Java & JGroups that used fault-tolerant, 
     virtually synchronous replicas to perform stock trades.
@@ -106,7 +106,7 @@ Projects
 
   - Client information, trade requests & stock data are preserved by the system.
 
-* Distributed Control of Currency Exchange Value, March 2013
+* Distributed Control of Currency Exchange Value using Java, March 2013
 
   - Implemented totally-ordered multicasting using Lamports logical clocks. The 
     goal was to keep the replicas on the 3 machines, which shared a currency exchange value, 
