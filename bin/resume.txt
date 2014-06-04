@@ -33,7 +33,7 @@ Work Experience
 ---------------
 
 * Advanced Computing & Information Systems Lab, University of Florida
-  Research Volunteer, May 2013 - Present
+  Research Volunteer, May 2013 - May 2014
   
   - Set up and administered Solr, Hadoop and Riak clusters as part of a project 
     to benchmark information retrieval systems. As part of the Solr setup, created 

@@ -1,7 +1,7 @@
 %---------------------------------------------
 %			RESUME
 %---------------------------------------------
-\documentclass[10pt]{article}
+\documentclass[10pt, letterpaper]{article}
 
 %---------------------------------------------
 %	BASIC PACKAGE DECLARATIONS
@@ -15,6 +15,10 @@
 %\usepackage{fancyhdr}
 \usepackage{enumitem}
 \setlist{nolistsep} % No space between list items
+
+% Add filled diamond instead of outlined diamond
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
 
 %\addtolength{\oddsidemargin}{-.975in}
 %\addtolength{\evensidemargin}{-.975in}
@@ -42,90 +46,77 @@
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-3800 SW 34\textsuperscript{th} Street, Apt. Z251, Gainesville, FL $\diamond$ (352) 278-5449 $\diamond$ \texttt{vmaharaja@ufl.edu} $\diamond$ \texttt{http://vivitsu.co}
+3800 SW 34\textsuperscript{th} St., Apt. Z251, Gainesville, FL $\vardiamond$ (352) 278-5449 $\vardiamond$ vmaharaja@ufl.edu $\vardiamond$ http://vivitsu.co
+%http://vivitsu.co
 \end{center}
 
 %---------------------------------------------
 %	           OBJECTIVE
 %---------------------------------------------
-%\textbf{Objective}
+%\textbf{OBJECTIVE}
 %\smallskip
 %\hrule
-%To obtain a position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering \& software development.
+%To obtain a software developer position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering.
 
 %---------------------------------------------
 %	           EDUCATION
 %---------------------------------------------
-\textbf{Education}
+\textbf{EDUCATION}
 \smallskip
-\hrule
+\newline
+%\hrule
 {\bf Master of Science}, Electrical \& Computer Engineering \hfill May 2014\\
 University of Florida, Gainesville, FL. \hfill GPA: 3.33/4.0
 
 {\bf Bachelor of Engineering}, Electronics \& Communication \hfill May 2011\\
 Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 
-Coursework: Computer Architecture, Parallel Computer Architecture, Computer Networks, Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers.
-
-%---------------------------------------------
-%	           SKILLS
-%---------------------------------------------
-\textbf{Skills}
-\smallskip
-\hrule
-\begin{itemize}
-    \item C, Java, Go, MPI, CUDA, Hadoop, Riak, Redis, Solr, HTML, CSS.
-    \item Knowledge of Data Structures \& Algorithms, Embedded Systems, Virtual Networks.
-\end{itemize} 
-%Operating Systems: GNU/Linux, OS X, Windows
-
 %---------------------------------------------
 %		WORK EXPERIENCE
 %---------------------------------------------
-\textbf{Experience}
+\textbf{EXPERIENCE}
 \smallskip
-\hrule
-\textit{Research Volunteer}, {\bf ACIS Lab}, University of Florida \hfill May 2013 - May 2014
+\newline
+%\hrule
+\textbf{Research Volunteer}, ACIS Lab, University of Florida \hfill May 2013 - May 2014
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-    \item Set up and administered \textbf{Solr}, \textbf{Hadoop} and \textbf{Riak} 
-clusters as part of a project to benchmark information retrieval systems. As part of the Solr setup, created a Solr schema to specify biological specimen records.
-    \item Developed a Java application to store the specimen records in Solr and Riak, using the \texttt{\bf solrj} and \texttt{\bf riak-java-client} client libraries.
-    \item Designed the application to fetch and parse \textbf{JSON} specimen records from a web service, convert the JSON to POJO/SolrDocument, upload it to the Riak/Solr
-setup and benchmark each step of the process.
-    \item Evaluated the Solr setup by benchmarking various parameters like indexing time, compression ratio, recall and the performance of the indexing algorithm.
-%    \item Developing \& evaluating text-based information retrieval systems using frameworks like Hadoop, Riak \& Apache Solr.% \smallskip \\
+    \item Set up and administered \textbf{Hadoop} \& \textbf{Riak} as \textbf{NoSQL} 
+datastores for storing and processing hierarchical data.
+    \item Designed a data model for Riak to perform \textbf{clustering} \& \textbf{tokenization} of records. 
+    \item Developed middleware in \textbf{Java} to fetch \textbf{JSON} objects 
+from a server using \textbf{HTTP} calls \& transform them to POJOs (Plain Old Java Objects).
+The middleware also functions as an interface to the Riak cluster.
+    \item Evaluated the setup by \textbf{benchmarking} various parameters of the middleware like object fetch time, 
+time to commit object to cluster \& JSON parsing time.  
 \end{itemize}
 
-\textit{Embedded Engineer}, {\bf Volansys Technologies}, Ahmedabad, India \hfill November 2011 - July 2012
+\textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
 \begin{itemize}
 %---------------------
 %	PROJECT - 1
 %---------------------
-    \item Developed, tested, documented and maintained a \textbf{USB 2.0 (Enhanced Host Controller Interface)} 
-Host Controller driver, as part of an application which allowed clients to \textbf{PXE (Pre-boot eXecution Environment)} 
-boot via a network using an USB to Ethenet adapter. 
-    \item Enhanced the driver to manage the complete \textbf{state machine} of the controller 
-including device detection, power management and data transfer. %\smallskip \\
-%    \item Developed software components to manage the PCI bus, negotiate ownership with the 
-%BIOS subsystem and added support for multiple vendor adapters, as part of the overall PXE application. %\smallskip \\
-%Handled responsibility for all aspects of the project, including development, maintenance, documentation \& client interaction.\smallskip \\
+    \item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow 
+clients on a LAN to boot using an USB to Ethenet adapter.
+    \item Developed components to interface with the \textbf{PCI} \& \textbf{BIOS} 
+subsystems in order to manage the complete \textbf{state machine} of the host controller
+\& maintain driver compatibility with adapters from multiple vendors. 
 %---------------------
 %	PROJECT - 2
 %---------------------
-    \item Developed a feature in \textbf{C} that would allow multiple broadcast domains in a wireless 
-router to form a \textbf{VLAN (Virtual LAN)}. Assessed, developed and delivered new feature requests from the 
-client for the router operating system.
+    \item Developed a network driver in \textbf{C} to allow multiple broadcast 
+domains in a router to form a \textbf{VLAN (Virtual LAN)}.
 \end{itemize}
 
 %---------------------------------------------
 %	          PROJECTS
 %---------------------------------------------
-\textbf{Projects}
-\smallskip
-\hrule
+\textbf{PROJECTS}
+\smallskip 
+\newline
+%\hrule
 %---------------------
 %       PROJECT - 1
 %---------------------
@@ -140,40 +131,56 @@ machines.
 %---------------------
 %	PROJECT - 2
 %---------------------
-\textbf{Distributed File System} \textit{using Java} \hfill August 2013 - December 2013
+\textbf{Distributed File System} using Java \hfill August 2013 - December 2013
 \begin{itemize}
-    \item Designed and implemented a distributed, decentralized file system based on a peer-to-peer architecture.
-    \item Implemented modular network management, file management and cluster management daemons to ensure consistency and fault-tolerance.
-    \item Designed and implemented a multi-threaded client module and application that communicates with the file system and stores data on the cluster.
+    \item Designed \& implemented a distributed filesystem with a peer-to-peer 
+architecture \& chunk based object storage.
+    \item Developed software daemons to detect \& react to node failures (fault-tolerance) \& ensure data consistency.  
+    \item Developed a multi-threaded client application to communicate with the cluster and store data on the filesystem.
 \end{itemize}
 
 %---------------------
 %	PROJECT - 3
 %---------------------
-\textbf{Web Service for Location Based Applications} \textit{using Go \& Redis} \hfill April 2013
+\textbf{Performance Evalulation of Information Retrieval Systems} using Java \hfill November 2013
 \begin{itemize}
-    \item Designed and implemented a secure web application that allows a user to view different resources on the web about his location. User account details, location history \& a POI database were managed in Redis.
-    \item Project source code can be found at \texttt{https://bitbucket.org/vivitsu/goserve}.
+    \item Benchmarked the indexing time, compression ratio, recall \& indexing 
+algorithm of an Apache Solr retrieval system.
+    \item Designed a schema to perform spelling corrections and clustering of 
+records using Lucene's Tokenizers \& Analyzers.
+    \item Developed an application in Java to automate the record indexing process.
 \end{itemize}
 
 %---------------------
 %	PROJECT - 4
+%---------------------
+\textbf{Web Service for Location Based Applications} using Go \& Redis \hfill April 2013
+\begin{itemize}
+    \item Designed and implemented a multi-threaded HTTP server that serves webpages
+based on a user's GPS co-ordinates.
+    \item Scaled the server to serve 10,000 HTTP requests per second using goroutines.
+    \item Developed a multi-threaded client simulator which makes multiple HTTP requests
+to the server using goroutines.
+\end{itemize}
+
+%---------------------
+%	PROJECT - 5
 %---------------------
 %{\bf Face Recognition using Artificial Neural Networks} \textit{using C \& CUDA}\hfill{\bf February 2013 - April 2013} \smallskip \\
 %Designed and implemented an application that performed face recognition using an artificial neural network on a CPU/GPU cluster. \smallskip
 %Used Principal Component Analysis for feature extraction and error backpropagation to train the network. %\medskip
 
 %---------------------
-%	PROJECT - 5
+%	PROJECT - 6
 %---------------------
-\textbf{Distributed Fault-Tolerant Stock Exchange System} \textit{using Java \& JGroups} \hfill April 2013
+\textbf{Distributed Fault-Tolerant Stock Exchange Server} using Java \& JGroups \hfill April 2013
 \begin{itemize}
-    \item Implemented a stock exchange system that used fault-tolerant, virtually synchronous replicas to perform stock trades.
+    \item Implemented a stock exchange server that used fault-tolerant, virtually synchronous replicas to perform stock trades.
     \item Enhanced the system so that client information, trade requests \& stock data are preserved across node failures. %\medskip
 \end{itemize}
 
 %---------------------
-%	PROJECT - 6
+%	PROJECT - 7
 %---------------------
 %\textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C} \hfill January 2013
 %\begin{itemize}
@@ -182,13 +189,13 @@ machines.
 %\end{itemize}
 
 %---------------------
-%	PROJECT - 7
+%	PROJECT - 8
 %---------------------
 %{\bf DNS Server} \textit{using Java RMI}\hfill{\bf February 2013} \smallskip \\
 %Implemented a DNS server that supports recursive as well as iterative name resolution with support for server side caching using Java RMI. %\medskip
 
 %---------------------
-%	PROJECT - 8
+%	PROJECT - 9
 %---------------------
 %\textbf{Distributed Control of Currency Exchange Value} \textit{using Java} \hfill March 2013
 %\begin{itemize}
@@ -197,7 +204,7 @@ machines.
 %\end{itemize}
 
 %---------------------
-%	PROJECT - 9
+%	PROJECT - 10
 %---------------------
 %{\bf Simulation of Dijkstra's Algorithm} \hfill November 2010
 %\begin{itemize}
@@ -210,7 +217,36 @@ machines.
 %{\bf ``Fundamentals of Switching \& Mobile Number Portability in a GSM network''}\hfill{\bf April 2011} \smallskip \\
 %Prepared and presented a report on the operation of a large scale GSM network, including switching principles and mobile number portability %implementation. %\medskip
 
-Other projects include \textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C}, \textbf{Face Recognition using Artificial Neural Networks} \textit{using C \& CUDA}, 
-\textbf{DNS Server} \textit{using Java RMI} \& \textbf{Totally-ordered Multicasting using Lamport logical clocks} \textit{using Java}. 
+%--------------------------
+%   ADDITIONAL PROJECTS
+%--------------------------
+%\textbf{ADDITIONAL PROJECTS}
+%\smallskip
+%\newline
+Additional projects include 
+\textbf{Gossip based Topology Management in Peer-to-Peer Systems} using C,  
+\textbf{DNS Server using} Java RMI, 
+\textbf{Totally-ordered Multicasting using Lamport's logical clocks} using Java.
 
+%---------------------------------------------
+%	           SKILLS
+%---------------------------------------------
+\textbf{SKILLS}
+\smallskip 
+%\hrule
+\begin{itemize}
+    \item C (Proficient), Java (Proficient), Go (Prior experience). Beginner in MPI, CUDA, HTML \& CSS.
+    \item Experience with Hadoop, Redis, Riak, Solr, GNU Make, Apache Maven, Git \& SVN.
+    \item Knowledge of Data Structures \& Algorithms, Embedded Systems, Virtual Networks.
+\end{itemize} 
+%Operating Systems: GNU/Linux, OS X, Windows
+
+%------------------
+%    COURSEWORK
+%------------------
+\textbf{COURSEWORK}
+\smallskip 
+\newline
+Computer Architecture, Probability \& Random Processes, Computer Networks, 
+Distributed Computing, Cloud Computing, Autonomic Computing, Information Retrieval (Guided Research), Virtual Computers.
 \end{document}
