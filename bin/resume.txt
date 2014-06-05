@@ -12,59 +12,32 @@ Contact Information
 Education
 ---------
 
-* University of Florida, Gainesville, FL
-  Master of Science, Electrical & Computer Engineering, May 2014
+* Master of Science, Electrical & Computer Engineering, May 2014 
+  University of Florida, Gainesville, FL
   GPA: 3.33/4.00
   
-* Dharmsinh Desai University, Nadiad, India
-  Bachelor of Engineering, Electronics & Communication, May 2011
+* Bachelor of Engineering, Electronics & Communication, May 2011
+  Dharmsinh Desai University, Nadiad, India
   GPA: 62/100
-  
-  Coursework: Computer Architecture, Computer Communications, Parallel Computer Architecture, 
-              Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers.
-
-Skills
-------
-
-* C, Java, Go, MPI, CUDA, Hadoop, Riak, Redis, Solr, HTML, CSS.
-* Knowledge of Data Structures & Algorithms, Embedded Systems, Virtual Networks.
 
 Work Experience
 ---------------
 
-* Advanced Computing & Information Systems Lab, University of Florida
-  Research Volunteer, May 2013 - May 2014
+* Research Volunteer, May 2013 - May 2014
+  Advanced Computing & Information Systems Lab, University of Florida
   
-  - Set up and administered Solr, Hadoop and Riak clusters as part of a project 
-    to benchmark information retrieval systems. As part of the Solr setup, created 
-    a Solr schema to specify biological specimen records.
+  - Set up and administered Hadoop & Riak as NoSQL datastores for storing and processing hierarchical data.
+  - Designed a data model for Riak to perform clustering & tokenization of records.
+  - Developed middleware in Java to fetch JSON objects from a server using HTTP calls & transform them to POJOs    (Plain Old Java Objects). The middleware also functions as an interface to the Riak cluster.
+  - Evaluated the setup by benchmarking various parameters of the middleware like object fetch time, time to commit    object to cluster & JSON parsing time.
 
-  - Developed a Java application to store the specimen records in Solr and Riak, 
-    using the solrj and riak-java-client client libraries.
-
-  - Designed the application to fetch and parse JSON specimen records from a web service, 
-    convert the JSON to POJO/SolrDocument, upload it to the Riak/Solr setup and benchmark 
-    each step of the process.
-
-  - Evaluated an Apache Solr system by benchmarking various parameters like indexing time, 
-    compression ratio, recall and the performance of the indexing algorithm.
-
-* Volansys Technologies, Ahmedabad, India
-  Embedded Engineer, Nov 2011 - July 2012
-  
-  - Developed, tested, documented and maintained a USB 2.0 (Enhanced Host Controller Interface) 
-    Host Controller driver, as part of an application which allowed clients to 
-    PXE (Pre-boot eXecution Environment) boot via a network using an USB to Ethenet adapter.
+* Embedded Engineer, Nov 2011 - July 2012
+  Volansys Technologies, Ahmedabad, India
  
-  - Enhanced the driver to manage the complete state machine of the controller 
-    including device detection, power management and data transfer.
-
-  - Developed a software feature in C that would allow multiple broadcast domains in a wireless 
-    router to form a VLAN (Virtual LAN). Assessed, developed and delivered new feature requests 
-    from the client for the router operating system.
- 
-  - Designed and executed test cases for topology setup, DHCP communication and VLAN tag 
-    management in the router's operating system.
+  - Developed & maintained a USB 2.0 (EHCI) driver, to allow clients on a LAN to boot using an USB to Ethenet adapter.
+  - Developed components to interface with the PCI & BIOS subsystems in order to manage the complete state machine of 
+    the host controller & maintain driver compatibility with adapters from multiple vendors.
+  - Developed a network driver in C to allow multiple broadcast domains in a router to form a VLAN (Virtual LAN).
 
 Projects
 --------
@@ -79,26 +52,30 @@ Projects
 
 * Distributed File System using Java, August 2013 - December 2013
 
-  - Designed and implemented a distributed, decentralized file system based on a 
-    peer-to-peer architecture
+  - Designed & implemented a distributed filesystem with a peer-to-peer architecture & chunk based object storage.
 
-  - Implemented modular network management, file management and cluster management 
-    daemons to ensure consistency and fault-tolerance
+  - Developed software daemons to detect & react to node failures (fault-tolerance) & ensure data consistency.
 
-  - Designed and implemented a multi-threaded client module and application that 
-    communicates with the file system and stores data on the cluster
+  - Developed a multi-threaded client application to communicate with the cluster and store data on the filesystem.
 
-* Web Server for Location Based Applications using Go & Redis, February 2013 - April 2013
+* Performance Evaluation of Information Retrieval Systems using Java, November 2013
+  - Benchmarked the indexing time, compression ratio, recall & indexing algorithm of an Apache Solr retrieval system.
+
+  - Designed a schema to perform spelling corrections and clustering of records using Lucene’s Tokenizers & Analyzers.
+ 
+  - Developed an application in Java to automate the record indexing process.
+
+* Web Server for Location Based Applications using Go & Redis, April 2013
   
-  - Designed and implemented a web application that allows a user to view 
-    different resources on the web about his location. User account details, 
-    location history & a POI database were managed in Redis.
+  - Designed and implemented a multi-threaded HTTP server that serves webpages based on a user’s GPS co-ordinates.
 
-  - Project source code can be found at https://bitbucket.org/vivitsu/goserve.
+  - Scaled the server to serve 10,000 HTTP requests per second using goroutines.
+
+  - Developed a multi-threaded client simulator which makes multiple HTTP requests to the server using goroutines.
 
 * Distributed Fault-Tolerant Stock Exchange System using Java & JGroups, April 2013
 
-  - Implemented a stock exchange system using Java & JGroups that used fault-tolerant, 
+  - Implemented a stock exchange system using Java & JGroups that uses fault-tolerant, 
     virtually synchronous replicas to perform stock trades.
 
   - The system was designed to handle large number of client connections & trade 
@@ -125,3 +102,17 @@ Projects
 
   - Modified the T-Man implementation so that it would adapt it's topology at runtime
     to changes in the radius of the network. This implementation was done in Java.
+
+Skills
+------
+
+* C, Java, Go, MPI, CUDA, Hadoop, Riak, Redis, Solr, HTML, CSS.
+* Knowledge of Data Structures & Algorithms, Embedded Systems, Virtual Networks.
+
+Coursework
+-----------
+
+Computer Architecture, Computer Communications, Probability & Random Processes, 
+Distributed Computing, Cloud Computing, Autonomic Computing, Virtual Computers,
+Information Retrieval (Guided Research).
+
