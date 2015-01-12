@@ -3,36 +3,17 @@
 %---------------------------------------------
 \documentclass[10pt, letterpaper]{article}
 
-%---------------------------------------------
-%	BASIC PACKAGE DECLARATIONS
-%---------------------------------------------
+%------------------------
+%  PACKAGE DECLARATIONS
+%------------------------
 \usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
-%\usepackage{array, xcolor}
-%\usepackage{mathpazo}
-%\usepackage[parfill]{parskip} % Removes paragraph indentation, but screws up the alignment of hfill. Use the next line
 \usepackage{parskip}
-%\usepackage{hyperref}
-%\usepackage{fancyhdr}
 \usepackage{enumitem}
 \setlist{nolistsep} % No space between list items
 
 % Add filled diamond instead of outlined diamond
 \DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
 \DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
-
-%\addtolength{\oddsidemargin}{-.975in}
-%\addtolength{\evensidemargin}{-.975in}
-%\addtolength{\textwidth}{1.95in}
-%\addtolength{\topmargin}{-1.1in}
-%\addtolength{\textheight}{2.75in}
-
-%\pagestyle{fancy}
-
-%\pagenumbering{gobble} % Adding this to suppress page numbering while keeping footer
-
-%\lfoot{All source code, including the \LaTeX\ source for this document can be found at \texttt{https://github.com/vivitsu}}
-%\renewcommand{\headrulewidth}{0.4pt}
-%\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
 %---------------------------------------------
@@ -46,17 +27,8 @@
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-%3800 SW 34\textsuperscript{th} St., Apt. Z251, Gainesville, FL $\vardiamond$ (352) 278-5449 $\vardiamond$ vmaharaja@ufl.edu $\vardiamond$ http://vivitsu.co
-http://vivitsu.co
+651 Addison St., Apt. 217, Berkeley, CA $\vardiamond$ (352) 278-5449 $\vardiamond$ vivitsu.maharaja@gmail.com $\vardiamond$ \texttt{http://vivitsu.co}
 \end{center}
-
-%---------------------------------------------
-%	           OBJECTIVE
-%---------------------------------------------
-%\textbf{OBJECTIVE}
-%\smallskip
-%\hrule
-%To obtain a software developer position where I can leverage and enhance my skills \& experience while working on challenging problems in computer engineering.
 
 %---------------------------------------------
 %	           EDUCATION
@@ -64,7 +36,6 @@ http://vivitsu.co
 \textbf{EDUCATION}
 \smallskip
 \newline
-%\hrule
 {\bf Master of Science}, Electrical \& Computer Engineering \hfill May 2014\\
 University of Florida, Gainesville, FL. \hfill GPA: 3.33/4.0
 
@@ -77,20 +48,20 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{EXPERIENCE}
 \smallskip
 \newline
-%\hrule
-\textbf{Research Volunteer}, ACIS Lab, University of Florida \hfill May 2013 - May 2014
+\textbf{Senior Software Engineer}, Applied Intelligence, BaseLayer Technology, San Francisco, CA \hfill Jan 2015 - Present
 \begin{itemize}
-%---------------------
-%	PROJECT - 1
-%---------------------
-    \item Set up and administered \textbf{Hadoop} \& \textbf{Riak} as \textbf{NoSQL} 
-datastores for storing and processing hierarchical data.
-    \item Designed a data model for Riak to perform \textbf{clustering} \& \textbf{tokenization} of records. 
-    \item Developed middleware in \textbf{Java} to fetch \textbf{JSON} objects 
-from a server using \textbf{HTTP} calls \& transform them to POJOs (Plain Old Java Objects).
-The middleware also functions as an interface to the Riak cluster.
-    \item Evaluated the setup by \textbf{benchmarking} various parameters of the middleware like object fetch time, 
-time to commit object to cluster \& JSON parsing time.  
+    \item Developing a big data analytics platform using distributed, high-throughput tools
+like \textbf{Apache Pig}, \textbf{Apache Hadoop}, etc. to analyze datacenter operations.
+    \item Responsible for development of the platform backend and data processing pipeline.
+\end{itemize}
+
+\textbf{Senior Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Dec 2014
+\begin{itemize}
+    \item Developed a data processing pipeline using \textbf{Apache Pig} to model 
+the power profile of a datacenter using accumulated sensor data.
+    \item Implemented a Pig \textbf{UDF (User-defined functions)} library in \textbf{Java} as part of a 2 person team
+to handle custom processing of input data including parsing, datetime handling and
+calculating statistics.
 \end{itemize}
 
 \textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
@@ -116,20 +87,8 @@ domains in a router to form a \textbf{VLAN (Virtual LAN)}.
 \textbf{PROJECTS}
 \smallskip 
 \newline
-%\hrule
 %---------------------
-%       PROJECT - 1
-%---------------------
-\textbf{Performance Evaluation of Open vSwitch \& Linux Bridge} \hfill April 2014
-\begin{itemize}
-    \item Performed a comprehensive evaluation of Linux Bridge \& Open vSwitch software bridges
-in multiple configurations.
-    \item Designed tests to measure throughput, latency and packet loss between networks of virtual
-machines.
-\end{itemize}
-
-%---------------------
-%	PROJECT - 2
+%	PROJECT - 1
 %---------------------
 \textbf{Distributed File System} using Java \hfill August 2013 - December 2013
 \begin{itemize}
@@ -140,7 +99,7 @@ architecture \& chunk based object storage.
 \end{itemize}
 
 %---------------------
-%	PROJECT - 3
+%	PROJECT - 2
 %---------------------
 \textbf{Performance Evaluation of Information Retrieval Systems} using Java \hfill November 2013
 \begin{itemize}
@@ -150,6 +109,20 @@ algorithm of an Apache Solr retrieval system.
 records using Lucene's Tokenizers \& Analyzers.
     \item Developed an application in Java to automate the record indexing process.
 \end{itemize}
+
+%---------------------
+%	PROJECT - 3
+%---------------------
+%\textbf{Evaluation of NoSQL systems for processing hierarchical data} using Java \hfill May 2013 - Aug 2013
+%\begin{itemize}
+%    \item Set up and administered \textbf{Hadoop} \& \textbf{Riak} as \textbf{NoSQL} 
+%datastores for storing and processing hierarchical data.
+%    \item Developed middleware in \textbf{Java} to fetch \textbf{JSON} objects 
+%from a server using \textbf{HTTP} calls \& transform them to POJOs (Plain Old Java Objects).
+%The middleware also functions as an interface to the Riak cluster.
+%    \item Evaluated the setup by \textbf{benchmarking} various parameters of the middleware like object fetch time, 
+%time to commit object to cluster \& JSON parsing time.  
+%\end{itemize}
 
 %---------------------
 %	PROJECT - 4
@@ -166,80 +139,31 @@ to the server using goroutines.
 %---------------------
 %	PROJECT - 5
 %---------------------
-%{\bf Face Recognition using Artificial Neural Networks} \textit{using C \& CUDA}\hfill{\bf February 2013 - April 2013} \smallskip \\
-%Designed and implemented an application that performed face recognition using an artificial neural network on a CPU/GPU cluster. \smallskip
-%Used Principal Component Analysis for feature extraction and error backpropagation to train the network. %\medskip
-
-%---------------------
-%	PROJECT - 6
-%---------------------
 \textbf{Distributed Fault-Tolerant Stock Exchange Server} using Java \& JGroups \hfill April 2013
 \begin{itemize}
     \item Implemented a stock exchange server that used fault-tolerant, virtually synchronous replicas to perform stock trades.
     \item Enhanced the system so that client information, trade requests \& stock data are preserved across node failures. %\medskip
 \end{itemize}
 
-%---------------------
-%	PROJECT - 7
-%---------------------
-%\textbf{Gossip based Topology Management in Peer-to-Peer Systems} \textit{using C} \hfill January 2013
-%\begin{itemize}
-%    \item Implemented the T-Man gossip based topology management protocol for peer to peer overlay networks, which achieved various topologies for a cluster of nodes based on different distance functions.
-%    \item Enhanced the T-Man implementation so that it would adapt it's topology at runtime to changes in the radius of the network. %\medskip
-%\end{itemize}
-
-%---------------------
-%	PROJECT - 8
-%---------------------
-%{\bf DNS Server} \textit{using Java RMI}\hfill{\bf February 2013} \smallskip \\
-%Implemented a DNS server that supports recursive as well as iterative name resolution with support for server side caching using Java RMI. %\medskip
-
-%---------------------
-%	PROJECT - 9
-%---------------------
-%\textbf{Distributed Control of Currency Exchange Value} \textit{using Java} \hfill March 2013
-%\begin{itemize}
-%    \item Implemented totally-ordered multicasting using Lamport's logical clocks. 
-%    \item Achieved consistent replicas across 3 machines, which shared a currency exchange value, using active replication protocol. %\medskip
-%\end{itemize}
-
-%---------------------
-%	PROJECT - 10
-%---------------------
-%{\bf Simulation of Dijkstra's Algorithm} \hfill November 2010
-%\begin{itemize}
-%    \item Developed a program using C that would take a user-defined network graph as input and find the shortest path between any two nodes in the graph using %Dijkstra's algorithm. %\medskip
-%\end{itemize}
-
-%-----------------------------
-%	PRESENTATION - 1
-%-----------------------------
-%{\bf ``Fundamentals of Switching \& Mobile Number Portability in a GSM network''}\hfill{\bf April 2011} \smallskip \\
-%Prepared and presented a report on the operation of a large scale GSM network, including switching principles and mobile number portability %implementation. %\medskip
-
 %--------------------------
 %   ADDITIONAL PROJECTS
 %--------------------------
-%\textbf{ADDITIONAL PROJECTS}
-%\smallskip
-%\newline
 Additional projects include 
 \textbf{Gossip based Topology Management in Peer-to-Peer Systems} using C,  
 \textbf{DNS Server using} Java RMI, 
-\textbf{Totally-ordered Multicasting using Lamport's logical clocks} using Java.
+\textbf{Totally-ordered Multicasting using Lamport's logical clocks} using Java, 
+\textbf{Performance Evaluation of Open vSwitch \& Linux Bridge}.
 
 %---------------------------------------------
 %	           SKILLS
 %---------------------------------------------
 \textbf{SKILLS}
 \smallskip 
-%\hrule
 \begin{itemize}
-    \item C (Proficient), Java (Proficient), Go (Prior experience). Beginner in MPI, CUDA, HTML \& CSS.
-    \item Experience with Hadoop, Redis, Riak, Solr, GNU Make, Apache Maven, Git \& SVN.
+    \item C (Proficient), Java (Proficient), Go (Prior experience), Bash scripting (Basic familiarity).
+    \item Experience with Apache Pig, Hadoop, Redis, Riak, Solr, GNU Make, Apache Maven, Git \& SVN.
     \item Knowledge of Data Structures \& Algorithms, Embedded Systems, Virtual Networks.
 \end{itemize} 
-%Operating Systems: GNU/Linux, OS X, Windows
 
 %------------------
 %    COURSEWORK
