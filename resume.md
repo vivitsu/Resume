@@ -1,9 +1,6 @@
 Vivitsu Maharaja
 ================
 
-Contact Information
--------------------
-
 * vivitsu@vivitsu.org
 * (352) 278-5449
 * http://github.com/vivitsu
