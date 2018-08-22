@@ -2,13 +2,6 @@ Resume
 ======
 
 This repository contains the source LaTeX file for my resume & the compiled pdf of the most recent version of my resume.
-It has the following directory structure:
-
-```
-/src - Contains the LaTeX source for the resume
-/pdf - Contains the most recent pdf version of the resume
-README.md - This README file
-```
 
 Motivation
 ----------
@@ -30,7 +23,6 @@ to put my resume in version control, and why I decided to do it in LaTeX.
 License
 =======
 
-The non-LaTeX contents of the source file `resume.tex` and the entire content of the pdf `resume.pdf` are copyright (c) Vivitsu Maharaja.
-You do not have permission to use this content.
+The non-LaTeX contents of the source file `resume.tex` and the entire content of the pdf `resume.pdf` are copyright (c) Vivitsu Maharaja. You do not have permission to use this content.
 
 You are however, free to use the source file as a template to build your own resume.
