@@ -54,7 +54,7 @@ Projects
 Skills
 ------
 
-* Programming Languages: Java, Python, JavaScript, Ruby. Additionally I'm familiar with C, Haskell, Scala & Rust, but don't have experience with any of them in a professional environment.
+* Programming Languages: Java, Python, JavaScript, Ruby.
 * Familiar working with *NIX type operating systems, and a broad range of tools and open-source products. Can pick up new tools quickly.
 
 Coursework
