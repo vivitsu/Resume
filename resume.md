@@ -55,7 +55,7 @@ Skills
 ------
 
 * Programming Languages: Java, Python, JavaScript, Ruby.
-* Familiar working with *NIX type operating systems, and a broad range of tools and open-source products. Can pick up new tools quickly.
+* Familiarity with Linux/Unix operating systems, git, bash and various other tools.
 
 Coursework
 -----------
