@@ -50,13 +50,14 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \newline
 \textbf{Software Development Engineer}, Amazon Web Services, Seattle, WA \hfill Jul 2016 - Present
 \begin{itemize}
-\item As part of the AWS SDKs and Tools team, I work on AWS' internal SDK release automation platform, which orchestrates daily release of all public AWS SDKs. In this team, I work closely with all the AWS SDK teams, and any service teams at AWS that release services in the public SDKs.
-\item Improved our platform's notification capabilities by implementing a system that provides customers (AWS service teams) information about pending actions blocking a release.
-\item Improved our platform's orchestration capabilities by allowing SDK teams to customize their packaging and publishing toolchain from our service.
-\item Improved platform security by working with the AWS Application Security team to identify security risks in our service, and mitigating them. This work is currently ongoing
-\item Improved platform reliability by leading an operational review of our service to identify monitoring, alarming, and availablity risks, and implementing mitigations. This work is currently ongoing.
-\item Designed \& implemented a web publishing pipeline for the Amazon WorkDocs product blog using the Jekyll \& Ruby ecosystem. The website is published to Amazon S3, and served via AWS CloudFront.
-\item Implemented multiple collaboration features for the Amazon WorkDocs web client, and as part of a team, implemented a redesign of the web client. This included writing new components for major parts of the web client, including the account panel and profile page.
+\item Software Engineer on AWS' internal SDK release automation platform, responsible for orchestrating SDK release workflows, which include linting and validating AWS service models, release schedule management, ensuring compliance with AWS API guidelines and AWS launch requirements, e.g. CloudFormation integration. Responsibilities include collaborating with SDK and service teams on new requirements and workflow and orchestration improvements.
+\item Significantly improved the platform notification layer, to communicate upcoming launch deadlines, reviewer churn, and enforce that launch action items are complete, e.g. testing new SDK versions before release. 
+\item Improved integration with SDK build systems by building a metadata specification API, using which SDK teams can customize their build systems, e.g. specify branches related to specific service builds in SDK codegen repos, service specific configuration for individual SDKs, e.g., PowerShell, etc.
+\item Improved our authorization model to ensure service and SDK teams have the correct access when managing team-specific activities related to their SDK launch.
+\item Contributed to our team's annual operational planning exercise, outlining opportunities, goals, and plans for improving the value provided by our service to AWS in the coming years.
+\item Idenitified bottlenecks in our service's day-to-day operations, and contributed to goals for reducing the operational load and oncall activities for the service.
+\item Led the security and operation readiness review for our service, which includes classifying all known architectural and operational security, latency and availability risks, and coming up with a plan to mitigate them. 
+\item Designed \& implemented a web publishing pipeline for the Amazon WorkDocs product blog using the Jekyll framework - https://blog.amazonworkdocs.com/.
 \end{itemize}
 \textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
 \begin{itemize}
@@ -65,13 +66,11 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \end{itemize}
 \textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
 \begin{itemize}
-    \item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data that monitors the power characteristics of a datacenter. The goal was to identify ooportunities for automating workflows that would reduce overall power consumption.
+\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data that monitors the power characteristics of a datacenter. The goal was to identify ooportunities for automating workflows that would reduce overall power consumption.
 \end{itemize}
-
 \textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
 \begin{itemize}
-\item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow clients on a LAN to boot using an USB to Ethenet adapter.
-\item Developed components to interface with the \textbf{PCI} \& \textbf{BIOS} subsystems in order to manage the complete \textbf{state machine} of the host controller \& maintain driver compatibility with adapters from multiple vendors. 
+\item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow clients on a LAN to boot using an USB to Ethenet adapter, including interfacing with the \textbf{PCI} \& \textbf{BIOS} subsystems in order to manage the host controller \textbf{state machine} \& maintain driver compatibility with adapters from multiple vendors. 
 \end{itemize}
 
 %---------------------------------------------
@@ -80,11 +79,15 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{PROJECTS}
 \smallskip 
 \newline
-\textbf{Distributed File System} using Java \hfill August 2013 - December 2013
+% ------- STATIC SITE GENERATOR PROJECT ------
+%% \textbf{Static Site Generator} using Java \hfill May 2020 - Ongoing
+%% \begin{itemize}
+%% \item Currently working on a static site generator in my spare time. The goal for this project is to write a complete static site generator, including markdown and template parsing and processing, without using any external dependencies.
+%% \end{itemize}
+% ------- STATIC SITE GENERATOR PROJECT ------
+\textbf{URL Shortener} using C, JavaScript \hfill November 2019
 \begin{itemize}
-\item Designed \& implemented a distributed filesystem with a peer-to-peer architecture \& chunk based object storage.
-\item Developed software agents to detect \& react to node failures (fault-tolerance) \& ensure data consistency.
-\item Developed a multi-threaded client application to communicate with the cluster and store data on the filesystem.
+\item Implemented a URL shortener in C in my spare time. The goal for this project to improve my C and web development skills, while using minimal external dependencies or libraries.
 \end{itemize}
 
 %---------------------------------------------
@@ -93,15 +96,15 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{SKILLS}
 \smallskip 
 \begin{itemize}
-    \item Programming Languages: Java, Python, JavaScript, Ruby.
-    \item Familiarity with Linux/Unix operating systems, git, bash and various other tools.
+\item Programming Languages: Comfortable in Java and Python. Familiar with C, Ruby and JavaScript
+\item Familiarity with Linux/Unix operating systems, git, bash, etc.
 \end{itemize} 
 
 %------------------
 %    COURSEWORK
 %------------------
-\textbf{COURSEWORK}
-\smallskip 
-\newline
-Computer Architecture, Probability \& Random Processes, Computer Networks, Distributed Computing, Cloud Computing, Autonomic Computing, Information Retrieval (Guided Research), Virtual Computers.
+%% \textbf{COURSEWORK}
+%% \smallskip 
+%% \newline
+%% Computer Architecture, Probability \& Random Processes, Computer Networks, Distributed Computing, Cloud Computing, Autonomic Computing, Information Retrieval (Guided Research), Virtual Computers.
 \end{document}
