@@ -1,7 +1,7 @@
 %---------------------------------------------
 %			RESUME
 %---------------------------------------------
-\documentclass[10pt, letterpaper]{article}
+\documentclass[10pt, a4paper]{article}
 
 %------------------------
 %  PACKAGE DECLARATIONS
@@ -50,23 +50,34 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \newline
 \textbf{Software Development Engineer}, Amazon Web Services, Seattle, WA \hfill Jul 2016 - Present
 \begin{itemize}
-\item Software Engineer on AWS' internal SDK release automation platform, responsible for orchestrating SDK release workflows, which include linting and validating AWS service models, release schedule management, ensuring compliance with AWS API guidelines and AWS launch requirements, e.g. CloudFormation integration. Responsibilities include collaborating with SDK and service teams on new requirements and workflow and orchestration improvements.
-\item Significantly improved the platform notification layer, to communicate upcoming launch deadlines, reviewer churn, and enforce that launch action items are complete, e.g. testing new SDK versions before release. 
-\item Improved integration with SDK build systems by building a metadata specification API, using which SDK teams can customize their build systems, e.g. specify branches related to specific service builds in SDK codegen repos, service specific configuration for individual SDKs, e.g., PowerShell, etc.
-\item Improved our authorization model to ensure service and SDK teams have the correct access when managing team-specific activities related to their SDK launch.
-\item Contributed to our team's annual operational planning exercise, outlining opportunities, goals, and plans for improving the value provided by our service to AWS in the coming years.
-\item Idenitified bottlenecks in our service's day-to-day operations, and contributed to goals for reducing the operational load and oncall activities for the service.
-\item Led the security and operation readiness review for our service, which includes classifying all known architectural and operational security, latency and availability risks, and coming up with a plan to mitigate them. 
-\item Designed \& implemented a web publishing pipeline for the Amazon WorkDocs product blog using the Jekyll framework - https://blog.amazonworkdocs.com/.
+\item \textbf{Transactional Services} \hfill Aug 2020 - Present
+  \begin{itemize}[label=$\bullet$]
+  \item Working on scaling the storage layer of an internal-only distributed, log-first database used by AWS teams to support higher read/write throughput and dataset sizes.
+  \item Switched our database snapshot storage format from GZIP to LZ4 compression, leading to faster upload times during backup, and faster restore times during bootstrap.    
+  \item Benchmarked effects of LZ4 compression on CPU utilization and network throughput in a variety of backup and restore scenarios.
+  \item Benchmarked effects of partitioning data within our storage layout (using a consistent hashing scheme) on read/write throughput and database snapshot restore times.
+  \end{itemize}
+\item \textbf{SDKs and Tools} \hfill Jan 2018 - Jul 2020
+  \begin{itemize}[label=$\bullet$]
+  \item Worked on AWS' internal SDK release automation platform, which was responsible for orchestrating SDK release workflows, such as linting and validating AWS service models, release schedule management and compliance with AWS API guidelines. Apart from working on the orchestration service, I was also involved in the operational readiness and security review of the platform.
+  \item Significantly improved the platform notification layer, to communicate upcoming launch deadlines, reviewer churn, and enforce that launch action items are complete, e.g. testing new SDK versions before release.
+  \item Improved integration with SDK build systems by building a metadata specification API, using which SDK teams can customize their build systems, e.g. specify branches related to specific service builds in SDK codegen repos, service specific configuration for individual SDKs, e.g., PowerShell, etc.
+  \item Idenitified bottlenecks in our service's day-to-day operations, and contributed to goals for reducing the operational load and oncall activities for the service.
+  \item Led the security and operation readiness review for our service, which includes classifying all known architectural and operational security, latency and availability risks, and coming up with a plan to mitigate them.
+  \end{itemize}
+\item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
+  \begin{itemize}[label=$\bullet$]
+    \item Designed \& implemented a web publishing pipeline for the Amazon WorkDocs product blog using the Jekyll framework - https://blog.amazonworkdocs.com/.
+  \end{itemize}
 \end{itemize}
 \textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
 \begin{itemize}
-\item Designed \& implemented a framework to schedule data pipelines using \textbf{Celery}, an asynchronous, concurrent task queue. Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
-\item Developed \& maintained a web service using \textbf{Flask}, \textbf{uWSGI} \& \textbf{Tesseract} to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
+\item Designed \& implemented a framework to schedule ETL (Extract, Transform, Load) pipelines. Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
+\item Developed \& maintained a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
 \end{itemize}
 \textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
 \begin{itemize}
-\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data that monitors the power characteristics of a datacenter. The goal was to identify ooportunities for automating workflows that would reduce overall power consumption.
+\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data gathered from colocation centers.
 \end{itemize}
 \textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
 \begin{itemize}
@@ -96,8 +107,7 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{SKILLS}
 \smallskip 
 \begin{itemize}
-\item Programming Languages: Comfortable in Java and Python. Familiar with C, Ruby and JavaScript
-\item Familiarity with Linux/Unix operating systems, git, bash, etc.
+\item Programming Languages: Comfortable in Java and Kotlin. Familiar with C and Python with a little experience in Ruby and JavaScript
 \end{itemize} 
 
 %------------------
