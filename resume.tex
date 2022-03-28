@@ -52,8 +52,9 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \begin{itemize}
 \item \textbf{Transactional Services} \hfill Aug 2020 - Present
   \begin{itemize}[label=$\bullet$]
-  \item Working on scaling the storage layer of an internal-only distributed, log-first database used by AWS teams to support higher read/write throughput and dataset sizes.
-  \item Switched our database snapshot storage format from GZIP to LZ4 compression, leading to faster upload times during backup, and faster restore times during bootstrap.    
+  \item Improved stream transaction throughput by making the transaction buffer in the streaming service thread-safe.
+  \item Improved JVM heap memory usage of the streaming service by moving buffers to off-heap memory.
+  \item Switched the database snapshot storage format from GZIP to LZ4 compression, leading to faster upload times during backup, and faster restore times during bootstrap.    
   \item Benchmarked effects of LZ4 compression on CPU utilization and network throughput in a variety of backup and restore scenarios.
   \item Benchmarked effects of partitioning data within our storage layout (using a consistent hashing scheme) on read/write throughput and database snapshot restore times.
   \end{itemize}
