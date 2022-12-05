@@ -11,10 +11,6 @@
 \usepackage{enumitem}
 \setlist{nolistsep} % No space between list items
 
-% Add filled diamond instead of outlined diamond
-\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
-\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
-
 \begin{document}
 %---------------------------------------------
 %		     TITLE
@@ -27,7 +23,7 @@
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-$\vardiamond$ vivitsu@vivitsu.org $\vardiamond$ (352) 278-5449 $\vardiamond$ \texttt{https://github.com/vivitsu}
+\texttt{<email>}: vivitsu.maharaja@gmail.com \texttt{<phone>}: (352) 278-5449 \texttt{<code>}: https://github.com/vivitsu
 \end{center}
 
 %---------------------------------------------
@@ -52,11 +48,9 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \begin{itemize}
 \item \textbf{Transactional Services} \hfill Aug 2020 - Present
   \begin{itemize}[label=$\bullet$]
-  \item Improved stream transaction throughput by making the transaction buffer in the streaming service thread-safe.
-  \item Improved JVM heap memory usage of the streaming service by moving buffers to off-heap memory.
-  \item Switched the database snapshot storage format from GZIP to LZ4 compression, leading to faster upload times during backup, and faster restore times during bootstrap.    
-  \item Benchmarked effects of LZ4 compression on CPU utilization and network throughput in a variety of backup and restore scenarios.
-  \item Benchmarked effects of partitioning data within our storage layout (using a consistent hashing scheme) on read/write throughput and database snapshot restore times.
+  \item The Transactional Services team builds some of the foundational distributed systems that are used by other teams within AWS and Amazon. Currently I am part of the team that builds a high-throughput, distributed, consistent, transaction log.
+  \item From January-August 2022 I worked on improving the throughout of an internal streaming database service. This involved making some single-threaded components multithreaded as well as mitigating JVM memory pressure by using off-heap buffers.
+  \item Between August 2020-December 2021 I worked on an internal transactional database service, improving the backup and restore times of database snapshots by switching to LZ4 compression, as well as benchmarking a new storage layout intended to improve read/write throughput as well snapshot restore times for customers with large dataset sizes.
   \end{itemize}
 \item \textbf{SDKs and Tools} \hfill Jan 2018 - Jul 2020
   \begin{itemize}[label=$\bullet$]
