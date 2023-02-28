@@ -49,6 +49,7 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \item \textbf{Transactional Services} \hfill Aug 2020 - Present
   \begin{itemize}[label=$\bullet$]
   \item The Transactional Services team builds some of the foundational distributed systems that are used by other teams within AWS and Amazon. Currently I am part of the team that builds a high-throughput, distributed, consistent, transaction log.
+  \item Improved telemetry reliability and fault-tolerance for the transaction log process by ensuring that the metric recorder is resilient to process crashes and deployments by using an out-of-process architecture using shared memory regions.
   \item From January-August 2022 I worked on improving the throughout of an internal streaming database service. This involved making some single-threaded components multithreaded as well as mitigating JVM memory pressure by using off-heap buffers.
   \item Between August 2020-December 2021 I worked on an internal transactional database service, improving the backup and restore times of database snapshots by switching to LZ4 compression, as well as benchmarking a new storage layout intended to improve read/write throughput as well snapshot restore times for customers with large dataset sizes.
   \end{itemize}
@@ -57,7 +58,6 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
   \item Worked on AWS' internal SDK release automation platform, which was responsible for orchestrating SDK release workflows, such as linting and validating AWS service models, release schedule management and compliance with AWS API guidelines. Apart from working on the orchestration service, I was also involved in the operational readiness and security review of the platform.
   \item Significantly improved the platform notification layer, to communicate upcoming launch deadlines, reviewer churn, and enforce that launch action items are complete, e.g. testing new SDK versions before release.
   \item Improved integration with SDK build systems by building a metadata specification API, using which SDK teams can customize their build systems, e.g. specify branches related to specific service builds in SDK codegen repos, service specific configuration for individual SDKs, e.g., PowerShell, etc.
-  \item Idenitified bottlenecks in our service's day-to-day operations, and contributed to goals for reducing the operational load and oncall activities for the service.
   \item Led the security and operation readiness review for our service, which includes classifying all known architectural and operational security, latency and availability risks, and coming up with a plan to mitigate them.
   \end{itemize}
 \item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
@@ -82,19 +82,19 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 %---------------------------------------------
 %	          PROJECTS
 %---------------------------------------------
-\textbf{PROJECTS}
-\smallskip 
-\newline
+%\textbf{PROJECTS}
+%\smallskip 
+%\newline
 % ------- STATIC SITE GENERATOR PROJECT ------
 %% \textbf{Static Site Generator} using Java \hfill May 2020 - Ongoing
 %% \begin{itemize}
 %% \item Currently working on a static site generator in my spare time. The goal for this project is to write a complete static site generator, including markdown and template parsing and processing, without using any external dependencies.
 %% \end{itemize}
 % ------- STATIC SITE GENERATOR PROJECT ------
-\textbf{URL Shortener} using C, JavaScript \hfill November 2019
-\begin{itemize}
-\item Implemented a URL shortener in C in my spare time. The goal for this project to improve my C and web development skills, while using minimal external dependencies or libraries.
-\end{itemize}
+%\textbf{URL Shortener} using C, JavaScript \hfill November 2019
+%\begin{itemize}
+%\item Implemented a URL shortener in C in my spare time. The goal for this project to improve my C and web development skills, while using minimal external dependencies or libraries.
+%\end{itemize}
 
 %---------------------------------------------
 %	           SKILLS
@@ -102,7 +102,7 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{SKILLS}
 \smallskip 
 \begin{itemize}
-\item Programming Languages: Comfortable in Java and Kotlin. Familiar with C and Python with a little experience in Ruby and JavaScript
+\item Programming Languages: Comfortable in Java, Kotlin \& Rust. Familiar with C and Python with a little experience in Ruby and JavaScript
 \end{itemize} 
 
 %------------------
