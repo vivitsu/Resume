@@ -1,7 +1,7 @@
 %---------------------------------------------
 %			RESUME
 %---------------------------------------------
-\documentclass[10pt, a4paper]{article}
+\documentclass[10pt, letterpaper]{article}
 
 %------------------------
 %  PACKAGE DECLARATIONS
@@ -23,8 +23,18 @@
 %---------------------------------------------
 %	     CONTACT INFORMATION
 %---------------------------------------------
-\texttt{<email>}: vivitsu.maharaja@gmail.com \texttt{<phone>}: (352) 278-5449 \texttt{<code>}: https://github.com/vivitsu
+\texttt{<email>}: vivitsu.maharaja@gmail.com \texttt{<linkedin>}: https://linkedin.com/in/vivitsumaharaja \texttt{<phone>}: (352) 278-5449
 \end{center}
+
+%---------------------------------------------
+%	           SUMMARY
+%---------------------------------------------
+\textbf{SUMMARY}
+\smallskip
+\newline
+Backend engineer interested in building high-performance, scalable distributed systems.
+%
+%NOTE: This resume contains a condensed summary highlighting the salient features of my work and is biased towards more recent work. My LinkedIn (linked above) profile has more details, especially about past work.
 
 %---------------------------------------------
 %	           EDUCATION
@@ -48,27 +58,25 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \begin{itemize}
 \item \textbf{Transactional Services} \hfill Aug 2020 - Present
   \begin{itemize}[label=$\bullet$]
-  \item The Transactional Services team builds some of the foundational distributed systems that are used by other teams within AWS and Amazon. Currently I am part of the team that builds a high-throughput, distributed, consistent, transaction log.
-  \item Improved telemetry reliability and fault-tolerance for the transaction log process by ensuring that the metric recorder is resilient to process crashes and deployments by using an out-of-process architecture using shared memory regions.
-  \item From January-August 2022 I worked on improving the throughout of an internal streaming database service. This involved making some single-threaded components multithreaded as well as mitigating JVM memory pressure by using off-heap buffers.
-  \item Between August 2020-December 2021 I worked on an internal transactional database service, improving the backup and restore times of database snapshots by switching to LZ4 compression, as well as benchmarking a new storage layout intended to improve read/write throughput as well snapshot restore times for customers with large dataset sizes.
+  \item Building a new variant of Amazon's distributed, high-throughput commit log that allows AWS teams to build consistent, transactional, distributed streaming, storage and database services at scale. As part of this team, I led parts of the API design effort and worked on integrating our APIs into the existing SDKs. This involved cross-team collaboration as part of the SDK integration and building cross-team consensus to align on our API design goals.
+  \item Previously, I worked on the rewrite of the distributed commit log service that is currently in use at Amazon and underpins major AWS services like S3, DynamoDB, EC2, etc. As part of this project, I integrated a high-performance telemetry framework to run as a sidecar process alongside the core log service to provide high-throughput metrics. The log service is designed to ingest data at a rate of 100s of MB/s while providing sub-10ms latency so one of the primary goals of this project were to provide high-throughput metrics without impacting core service performance.
+  \item Worked on improving the throughout of an internal streaming database service. By multi-threading some single-threaded components and moving memory allocations to off-heap buffers outside the JVM, I was able to improve aggregate throughput per host by 10x from 100 Mb/s to roughly 1 Gb/s while increasing connections per host to 5x the previous limit. 
+%  \item Between August 2020-December 2021 I worked on an internal transactional database service, improving the backup and restore times of database snapshots by switching to LZ4 compression, as well as benchmarking a new storage layout intended to improve read/write throughput as well snapshot restore times for customers with large dataset sizes.
   \end{itemize}
-\item \textbf{SDKs and Tools} \hfill Jan 2018 - Jul 2020
+\item \textbf{SDKs and Tools} \hfill Jan 2018 - Aug 2020
   \begin{itemize}[label=$\bullet$]
-  \item Worked on AWS' internal SDK release automation platform, which was responsible for orchestrating SDK release workflows, such as linting and validating AWS service models, release schedule management and compliance with AWS API guidelines. Apart from working on the orchestration service, I was also involved in the operational readiness and security review of the platform.
-  \item Significantly improved the platform notification layer, to communicate upcoming launch deadlines, reviewer churn, and enforce that launch action items are complete, e.g. testing new SDK versions before release.
-  \item Improved integration with SDK build systems by building a metadata specification API, using which SDK teams can customize their build systems, e.g. specify branches related to specific service builds in SDK codegen repos, service specific configuration for individual SDKs, e.g., PowerShell, etc.
-  \item Led the security and operation readiness review for our service, which includes classifying all known architectural and operational security, latency and availability risks, and coming up with a plan to mitigate them.
+  \item Worked on AWS' internal SDK release automation platform, which was responsible for orchestrating SDK release workflows, such as linting and validating AWS service models, release schedule management and compliance with AWS API guidelines. As part of this team, I led the operational readiness and security review of the platform while also working on feature improvements.
+  \item Developed a feature that allowed SDK teams to customize their build system, allowing different versions of SDKs to be built on demand. For e.g., using this feature, SDK teams were able to automate the release of the PowerShell SDK (which was previously a manual process done post .NET SDK release), or provide preview/beta builds to service teams for early testing and validation before launching publicly. 
   \end{itemize}
 \item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
   \begin{itemize}[label=$\bullet$]
-    \item Designed \& implemented a web publishing pipeline for the Amazon WorkDocs product blog using the Jekyll framework - https://blog.amazonworkdocs.com/.
+    \item Worked on Amazon WorkDocs' front-end team. Implemented a photo viewer to view multi-photo albums stored in users' directories, and shipped a rewrite of the user's profile page as part of the WorkDocs UI redesign.
   \end{itemize}
 \end{itemize}
 \textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
 \begin{itemize}
 \item Designed \& implemented a framework to schedule ETL (Extract, Transform, Load) pipelines. Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
-\item Developed \& maintained a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
+\item Developed a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
 \end{itemize}
 \textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
 \begin{itemize}
@@ -102,7 +110,7 @@ Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 \textbf{SKILLS}
 \smallskip 
 \begin{itemize}
-\item Programming Languages: Comfortable in Java, Kotlin \& Rust. Familiar with C and Python with a little experience in Ruby and JavaScript
+\item Programming Languages: Comfortable with Java. Familiar with Kotlin, Rust and Python.
 \end{itemize} 
 
 %------------------
