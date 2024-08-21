@@ -33,8 +33,66 @@
 \smallskip
 \newline
 Backend engineer interested in building high-performance, scalable distributed systems.
-%
-%NOTE: This resume contains a condensed summary highlighting the salient features of my work and is biased towards more recent work. My LinkedIn (linked above) profile has more details, especially about past work.
+
+%---------------------------------------------
+%		WORK EXPERIENCE
+%---------------------------------------------
+\textbf{EXPERIENCE}
+\smallskip
+\newline
+\textbf{Software Development Engineer}, Amazon Web Services, Seattle, WA \hfill Jul 2016 - Present
+\begin{itemize}
+\item \textbf{Transactional Services} \hfill Aug 2020 - Present
+  \begin{itemize}[label=$\bullet$]
+    \item Developed a tool for generating load and writing canaries that test customer workloads for a new variant of Amazon's distributed, 
+      high-throughput transaction log. The tools capabilities include generating high load at variable tps and payload sizes, traffic shaping 
+      using statistical distributions like Poisson as well as data integrity verification using cumulative checksums.
+    \item Led the API integration effort a new control plane service in the existing log service's clients and SDKs. This included both designing
+      the API, as well implementing them in the existing clients.
+    \item Implemented high-throughput telemetry and observability for a distributed transaction log service. The telemetry process runs as a
+      sidecar alongside the core log service, ingesting metrics when processing data at high TPS/throughput (100s of MB/s and 10s of thousands of TPS).
+      The telemetry framework uses a double-buffer architecture using statically allocated buffers to prevent any performance impact on the core log
+      service's performance.
+    \item Improved the throughput and connection fan-out of a streaming database service by moving on-heap JVM buffers to off-heap memory, and increasing
+      concurrency and parallism by multi-threading the fanout buffer. After these improvements, the aggregate throughput per host was increased by 10x and
+      the connection fanout was increased by 5x.
+  \end{itemize}
+\item \textbf{SDKs and Tools} \hfill Jan 2018 - Aug 2020
+  \begin{itemize}[label=$\bullet$]
+    \item Led the operational readiness and security review effort for AWS' internal SDK release automation platform. This includes documenting the threat model
+      for the platform, and identifying and driving mitigation for known operational and resiliency gaps in the service. 
+    \item Improved the platform's workflow capabilities that allow different build systems used to build the AWS SDKs to be customized, which allowed automating
+      releases for new SDKs, e.g., the AWS Windows PowerShell CLI.
+  \end{itemize}
+\item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
+  \begin{itemize}[label=$\bullet$]
+    \item Worked on Amazon WorkDocs' front-end team. Implemented a photo viewer to view multi-photo albums stored in users' directories, and 
+      shipped a rewrite of the user's profile page as part of the WorkDocs UI redesign.
+  \end{itemize}
+\end{itemize}
+\textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
+\begin{itemize}
+\item Designed \& implemented a framework to schedule ETL (Extract, Transform, Load) pipelines using a producer/consumer model using Celery and RabbitMQ. 
+  Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
+\item Developed a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
+\end{itemize}
+\textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
+\begin{itemize}
+\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data gathered from colocation centers.
+\end{itemize}
+\textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
+\begin{itemize}
+\item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow clients on a LAN to boot using an USB to Ethenet adapter, including interfacing with the \textbf{PCI} \& \textbf{BIOS} subsystems in order to manage the host controller \textbf{state machine} \& maintain driver compatibility with adapters from multiple vendors. 
+\end{itemize}
+
+%---------------------------------------------
+%	           SKILLS
+%---------------------------------------------
+\textbf{SKILLS}
+\smallskip 
+\begin{itemize}
+\item Programming Languages: Comfortable with Java. Familiar with Kotlin, Rust and Python.
+\end{itemize} 
 
 %---------------------------------------------
 %	           EDUCATION
@@ -48,76 +106,4 @@ University of Florida, Gainesville, FL. \hfill GPA: 3.33/4.0
 {\bf Bachelor of Engineering}, Electronics \& Communication \hfill May 2011\\
 Dharmsinh Desai University, Nadiad, India. \hfill GPA: 62/100
 
-%---------------------------------------------
-%		WORK EXPERIENCE
-%---------------------------------------------
-\textbf{EXPERIENCE}
-\smallskip
-\newline
-\textbf{Software Development Engineer}, Amazon Web Services, Seattle, WA \hfill Jul 2016 - Present
-\begin{itemize}
-\item \textbf{Transactional Services} \hfill Aug 2020 - Present
-  \begin{itemize}[label=$\bullet$]
-  \item Building a new variant of Amazon's distributed, high-throughput commit log that allows AWS teams to build consistent, transactional, distributed streaming, storage and database services at scale. As part of this team, I led parts of the API design effort and worked on integrating our APIs into the existing SDKs. This involved cross-team collaboration as part of the SDK integration and building cross-team consensus to align on our API design goals.
-  \item Previously, I worked on the rewrite of the distributed commit log service that is currently in use at Amazon and underpins major AWS services like S3, DynamoDB, EC2, etc. As part of this project, I integrated a high-performance telemetry framework to run as a sidecar process alongside the core log service to provide high-throughput metrics. The log service is designed to ingest data at a rate of 100s of MB/s while providing sub-10ms latency so one of the primary goals of this project were to provide high-throughput metrics without impacting core service performance.
-  \item Worked on improving the throughout of an internal streaming database service. By multi-threading some single-threaded components and moving memory allocations to off-heap buffers outside the JVM, I was able to improve aggregate throughput per host by 10x from 100 Mb/s to roughly 1 Gb/s while increasing connections per host to 5x the previous limit. 
-%  \item Between August 2020-December 2021 I worked on an internal transactional database service, improving the backup and restore times of database snapshots by switching to LZ4 compression, as well as benchmarking a new storage layout intended to improve read/write throughput as well snapshot restore times for customers with large dataset sizes.
-  \end{itemize}
-\item \textbf{SDKs and Tools} \hfill Jan 2018 - Aug 2020
-  \begin{itemize}[label=$\bullet$]
-  \item Worked on AWS' internal SDK release automation platform, which was responsible for orchestrating SDK release workflows, such as linting and validating AWS service models, release schedule management and compliance with AWS API guidelines. As part of this team, I led the operational readiness and security review of the platform while also working on feature improvements.
-  \item Developed a feature that allowed SDK teams to customize their build system, allowing different versions of SDKs to be built on demand. For e.g., using this feature, SDK teams were able to automate the release of the PowerShell SDK (which was previously a manual process done post .NET SDK release), or provide preview/beta builds to service teams for early testing and validation before launching publicly. 
-  \end{itemize}
-\item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
-  \begin{itemize}[label=$\bullet$]
-    \item Worked on Amazon WorkDocs' front-end team. Implemented a photo viewer to view multi-photo albums stored in users' directories, and shipped a rewrite of the user's profile page as part of the WorkDocs UI redesign.
-  \end{itemize}
-\end{itemize}
-\textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
-\begin{itemize}
-\item Designed \& implemented a framework to schedule ETL (Extract, Transform, Load) pipelines. Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
-\item Developed a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
-\end{itemize}
-\textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
-\begin{itemize}
-\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data gathered from colocation centers.
-\end{itemize}
-\textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
-\begin{itemize}
-\item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow clients on a LAN to boot using an USB to Ethenet adapter, including interfacing with the \textbf{PCI} \& \textbf{BIOS} subsystems in order to manage the host controller \textbf{state machine} \& maintain driver compatibility with adapters from multiple vendors. 
-\end{itemize}
-
-%---------------------------------------------
-%	          PROJECTS
-%---------------------------------------------
-%\textbf{PROJECTS}
-%\smallskip 
-%\newline
-% ------- STATIC SITE GENERATOR PROJECT ------
-%% \textbf{Static Site Generator} using Java \hfill May 2020 - Ongoing
-%% \begin{itemize}
-%% \item Currently working on a static site generator in my spare time. The goal for this project is to write a complete static site generator, including markdown and template parsing and processing, without using any external dependencies.
-%% \end{itemize}
-% ------- STATIC SITE GENERATOR PROJECT ------
-%\textbf{URL Shortener} using C, JavaScript \hfill November 2019
-%\begin{itemize}
-%\item Implemented a URL shortener in C in my spare time. The goal for this project to improve my C and web development skills, while using minimal external dependencies or libraries.
-%\end{itemize}
-
-%---------------------------------------------
-%	           SKILLS
-%---------------------------------------------
-\textbf{SKILLS}
-\smallskip 
-\begin{itemize}
-\item Programming Languages: Comfortable with Java. Familiar with Kotlin, Rust and Python.
-\end{itemize} 
-
-%------------------
-%    COURSEWORK
-%------------------
-%% \textbf{COURSEWORK}
-%% \smallskip 
-%% \newline
-%% Computer Architecture, Probability \& Random Processes, Computer Networks, Distributed Computing, Cloud Computing, Autonomic Computing, Information Retrieval (Guided Research), Virtual Computers.
 \end{document}
