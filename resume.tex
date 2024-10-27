@@ -32,7 +32,14 @@
 \textbf{SUMMARY}
 \smallskip
 \newline
-Backend engineer interested in building high-performance, scalable distributed systems.
+My primary interest is in building and operating high-performance, scalable distributed systems. Typically these fall under
+the platform infrastructure domain, usually involving storage, streaming, database or workflow orchestration services.
+
+I have prior experience working on data pipelines, ETL workflows, client/SDK development, workflow orchestration as well as
+high-performance telemetry, observability and performance testing of high-scale distributed systems.
+
+As of May 2023, I'm part of the core replication/dataplane team working on a new distributed transaction log at AWS. The
+transaction log uses a variant of Paxos for leader election and data replication.
 
 %---------------------------------------------
 %		WORK EXPERIENCE
@@ -44,49 +51,44 @@ Backend engineer interested in building high-performance, scalable distributed s
 \begin{itemize}
 \item \textbf{Transactional Services} \hfill Aug 2020 - Present
   \begin{itemize}[label=$\bullet$]
-    \item Building a new variant of Amazon's distributed, high-throughput transaction log used by other AWS teams to build storage, streaming
-      and database services. As part of the replication team, I work on testing, performance, observability and the core replication 
-      algorithm.
-    \item Developed a tool for generating load and writing canaries that test customer workloads for a new variant of Amazon's distributed, 
-      high-throughput transaction log. The tools capabilities include generating high load at variable tps and payload sizes, traffic shaping 
-      using statistical distributions like Poisson as well as data integrity verification using cumulative checksums.
-    \item Led the API integration effort a new control plane service in the existing log service's clients and SDKs. This included both designing
-      the API, as well implementing them in the existing clients.
-    \item Implemented high-throughput telemetry and observability for a distributed transaction log service. The telemetry process runs as a
-      sidecar alongside the core log service, ingesting metrics when processing data at high TPS/throughput (100s of MB/s and 10s of thousands of TPS).
-      The telemetry framework uses a double-buffer architecture using statically allocated buffers to prevent any performance impact on the core log
-      service's performance.
-    \item Improved the throughput and connection fan-out of a streaming database service by moving on-heap JVM buffers to off-heap memory, and increasing
-      concurrency and parallism by multi-threading the fanout buffer. After these improvements, the aggregate throughput per host was increased by 10x and
-      the connection fanout was increased by 5x.
+    \item Built canaries to test performance, correctness and durability of a new replication service for a high-performance 
+      distributed transaction log. The replication service uses a variant of Paxos for leader election and data replication.
+    \item These canaries include a variable TPS generator at high load using a Poisson distribution to
+      test for performance, a verifier based on cumulative checksums to test for data corruption and pathological load test
+      scenarios to test validity, correctness and performance of the core data replication API.
+    \item Led the API integration effort for a new control plane service in the service's clients and SDKs. This included designing
+      the API, as well implementing them in the existing Java and Rust SDKs.
+    \item Implemented high-throughput telemetry and observability for the storage backend for this distributed transaction log.
+      The telemetry process runs as a sidecar alongside the core log service, ingesting metrics when processing data at 
+      high TPS/throughput (100s of MB/s and 10s of thousands of TPS). The telemetry framework uses a double-buffer architecture 
+      using statically allocated buffers to prevent performance impact on the core storage service's performance.
+    \item Improved the throughput and connection fan-out of a streaming database service by moving on-heap JVM buffers 
+      to off-heap memory, and increasing concurrency and parallism by multi-threading the fanout buffer. 
+      After these improvements, the aggregate throughput per host was increased by 10x and the connection fanout was increased by 5x.
+    \item Shipped an updated version of a database snapshot service that uses LZ4 compression instead of GZIP to improve
+      snapshot restore times when restoring database snapshots from backups. 
   \end{itemize}
-\item \textbf{SDKs and Tools} \hfill Jan 2018 - Aug 2020
+\item \textbf{AWS Builder Tools} \hfill Jan 2018 - Aug 2020
   \begin{itemize}[label=$\bullet$]
-    \item Led the operational readiness and security review effort for AWS' internal SDK release automation platform. This includes documenting the threat model
+    \item Responsible for feature development, operations and maintenace of AWS' SDK release orchestration service.
+    \item Led the operational readiness and security review for this service. This involved documenting the threat model
       for the platform, and identifying and driving mitigation for known operational and resiliency gaps in the service. 
-    \item Improved the platform's workflow capabilities that allow different build systems used to build the AWS SDKs to be customized, which allowed automating
-      releases for new SDKs, e.g., the AWS Windows PowerShell CLI.
+    \item Built new workflow capabilities to support release automation for the official AWS PowerShell SDK. Until then
+      the PowerShell SDK was built and published manually bypassing the release automation process.
   \end{itemize}
 \item \textbf{Amazon Workdocs} \hfill Jul 2016 - Jan 2018
   \begin{itemize}[label=$\bullet$]
-    \item Worked on Amazon WorkDocs' front-end team. Implemented a photo viewer to view multi-photo albums stored in users' directories, and 
-      shipped a rewrite of the user's profile page as part of the WorkDocs UI redesign.
+    \item Implemented an album viewer to view multi-photo albums stored in users' WorkDocs account, and shipped a rewrite 
+      of the user's profile page as part of the WorkDocs UI redesign.
   \end{itemize}
 \end{itemize}
-\textbf{Software Engineer}, LendingHome, San Francisco, CA \hfill Feb 2015 - Jul 2016
-\begin{itemize}
-\item Designed \& implemented a framework to schedule ETL (Extract, Transform, Load) pipelines using a producer/consumer model using Celery and RabbitMQ. 
-  Using this framework, we were able to improve performance of our existing pipelines by more than 100\%.
-\item Developed a web service using Tesseract to automatically perform OCR on documents that are uploaded to the platform. The OCR-ed documents are then annotated by underwriters \& auditors to speed up loan processing.
-\end{itemize}
-\textbf{Software Engineer}, Applied Intelligence, IO Data Centers, San Francisco, CA \hfill Sep 2014 - Feb 2015
-\begin{itemize}
-\item Developed data processing pipelines using \textbf{Apache Pig} to analyze sensor data gathered from colocation centers.
-\end{itemize}
-\textbf{Embedded Engineer}, Volansys Technologies, Ahmedabad, India \hfill November 2011 - July 2012
-\begin{itemize}
-\item Developed \& maintained a \textbf{USB 2.0 (EHCI)} driver, to allow clients on a LAN to boot using an USB to Ethenet adapter, including interfacing with the \textbf{PCI} \& \textbf{BIOS} subsystems in order to manage the host controller \textbf{state machine} \& maintain driver compatibility with adapters from multiple vendors. 
-\end{itemize}
+\textbf{Software Engineer}, LendingHome (now Kiava), San Francisco, CA \hfill Feb 2015 - Jul 2016
+  \begin{itemize}
+    \item I was the second engineer on the data engineering team at LendingHome and I built the first version of their data ingestion pipeline.
+      The motivation was to ingest data from various data sources into a Redshift based data warehouse which was used for data analytics and business
+      intelligence. I built the pipeline using asynchronous workflows that were triggered on a regular schedule with Celery and RabbitMQ being the message
+      bus between the data extraction (from the source) and data ingestion (into Redshift) subsystems.
+  \end{itemize}
 
 %---------------------------------------------
 %	           SKILLS
